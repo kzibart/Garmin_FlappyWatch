@@ -1,0 +1,1366 @@
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 3; ]
+import Toybox.System;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 4; ]
+import Toybox.Timer;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 5; ]
+import Toybox.Application.Storage;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 7; @position = 4; ]
+var ds;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 8; @position = 4; ]
+var sw;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 9; @position = 4; ]
+var sh;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 10; @position = 4; ]
+var timer;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 11; @position = 4; ]
+var watchup;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 12; @position = 4; ]
+var watchdown;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 13; @position = 4; ]
+var watchflat;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 14; @position = 4; ]
+var ww;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 15; @position = 4; ]
+var wh;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 16; @position = 4; ]
+var armtop;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 17; @position = 4; ]
+var armbot;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 18; @position = 4; ]
+var armtopwat;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 19; @position = 4; ]
+var armbotwat;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 20; @position = 4; ]
+var armholetopback;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 21; @position = 4; ]
+var armholetopfront;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 22; @position = 4; ]
+var armholebotback;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 23; @position = 4; ]
+var armholebotfront;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 24; @position = 4; ]
+var aw;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 25; @position = 4; ]
+var ah;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 26; @position = 4; ]
+var dy = 0.0;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 27; @position = 4; ]
+var iy;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 28; @position = 4; ]
+var x;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 29; @position = 4; ]
+var y;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 30; @position = 4; ]
+var dym;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 31; @position = 4; ]
+var flapping = 0;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 32; @position = 4; ]
+var minarmy;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 33; @position = 4; ]
+var maxarmy;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 34; @position = 4; ]
+var armdx;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 35; @position = 4; ]
+var arms;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 36; @position = 4; ]
+var hit = false;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 37; @position = 4; ]
+var hittime = 0;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 38; @position = 4; ]
+var checking = false;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 39; @position = 4; ]
+var score = 0;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 40; @position = 4; ]
+var scorex;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 41; @position = 4; ]
+var scorey;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 42; @position = 4; ]
+var diff = 0;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 43; @position = 4; ]
+var highscores;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 44; @position = 4; ]
+var hscorex;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 45; @position = 4; ]
+var hscorey;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 46; @position = 4; ]
+var newgame = true;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 47; @position = 4; ]
+var startx;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 48; @position = 4; ]
+var starty;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 49; @position = 4; ]
+var holeyt;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 50; @position = 4; ]
+var holeyb;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 52; ]
+class FlappyWatchView extends WatchUi.View{
+    [ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 52; ]
+    <init> {
+    }
+    [ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 52; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 54; ]
+    function initialize() as Void {
+    }
+    [ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 58; ]
+    function onLayout(dc as Dc) as Void {
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_58_40_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 59 8 ]
+        %tmp.1 = getm $.Toybox.Application.Storage;
+        %tmp.2 = getv function %tmp.1 :getValue;
+        %tmp.3 = "diff";
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        putv self :diff %tmp.4;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 60 8 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_60_8_if_stmt:
+        %tmp.6 = getv ? :diff;
+        %tmp.7 = null;
+        %tmp.8 = eq %tmp.6 %tmp.7;
+        bf %tmp.8 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_60_8_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_60_8_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_60_26_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 60 28 ]
+        %tmp.9 = 0;
+        putv self :diff %tmp.9;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_60_26_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_60_8_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_60_8_if_end:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 61 8 ]
+        %tmp.10 = getm $.Toybox.Application.Storage;
+        %tmp.11 = getv function %tmp.10 :getValue;
+        %tmp.12 = "highscores";
+        %tmp.13 = invoke %tmp.10 %tmp.11(%tmp.12);
+        putv self :highscores %tmp.13;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 62 8 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_62_8_if_stmt:
+        %tmp.15 = getv ? :highscores;
+        %tmp.16 = null;
+        %tmp.17 = eq %tmp.15 %tmp.16;
+        bf %tmp.17 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_62_8_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_62_8_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_62_32_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 62 34 ]
+        %tmp.18 = newa 3;
+        %tmp.19 = 0;
+        %tmp.20 = dup %tmp.18;
+        %tmp.21 = aputv %tmp.20 0 %tmp.19;
+        %tmp.22 = 0;
+        %tmp.23 = dup %tmp.21;
+        %tmp.24 = aputv %tmp.23 1 %tmp.22;
+        %tmp.25 = 0;
+        %tmp.26 = dup %tmp.24;
+        %tmp.27 = aputv %tmp.26 2 %tmp.25;
+        putv self :highscores %tmp.27;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_62_32_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_62_8_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_62_8_if_end:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_58_40_stop:
+    }
+    [ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 68; ]
+    function onShow() as Void {
+    }
+    [ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 72; ]
+    function onUpdate(dc as Dc) as Void {
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_72_40_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 74 8 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_8_if_stmt:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_12_begin:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_13_begin:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_13_begin:
+        %tmp.2 = getv ? :y;
+        %tmp.4 = getv ? :iy;
+        %tmp.5 = ne %tmp.2 %tmp.4;
+        %tmp.6 = dup %tmp.5;
+        bt %tmp.6 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_24_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_24_false:
+        %tmp.8 = getv ? :dy;
+        %tmp.9 = 0;
+        %tmp.10 = ne %tmp.8 %tmp.9;
+        %tmp.11 = or %tmp.5 %tmp.10;
+        push %tmp.11;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_24_end:
+        %tmp.12 = phi [%tmp.6 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_13_begin] [%tmp.11 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_24_false] [%tmp.12 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_24_end];
+        %tmp.13 = dup %tmp.12;
+        bt %tmp.13 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_35_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_35_false:
+        %tmp.15 = getv ? :flapping;
+        %tmp.16 = 0;
+        %tmp.17 = gt %tmp.15 %tmp.16;
+        %tmp.18 = or %tmp.12 %tmp.17;
+        push %tmp.18;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_35_end:
+        %tmp.19 = phi [%tmp.13 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_13_begin] [%tmp.18 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_35_false] [%tmp.19 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_35_end];
+        %tmp.20 = dup %tmp.19;
+        bf %tmp.20 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_53_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_53_true:
+        %tmp.22 = getv ? :hit;
+        %tmp.23 = not %tmp.22;
+        %tmp.24 = and %tmp.19 %tmp.23;
+        push %tmp.24;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_53_end:
+        %tmp.25 = phi [%tmp.20 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_12_begin] [%tmp.24 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_53_true] [%tmp.25 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_53_end];
+        bf %tmp.25 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_8_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_8_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_59_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 75 12 ]
+        %tmp.28 = getm $.Toybox.Timer;
+        %tmp.29 = getv function ? %tmp.28 :Timer;
+        %tmp.26 = newc %tmp.29 ();
+        putv self :timer %tmp.26;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 76 12 ]
+        %tmp.31 = getv ? :timer;
+        %tmp.32 = getv function %tmp.31 :start;
+        %tmp.33 = self;
+        %tmp.34 = getv function %tmp.33 :method;
+        %tmp.36 = const :onTimer;
+        %tmp.37 = invoke %tmp.33 %tmp.34(%tmp.36);
+        %tmp.38 = 50;
+        %tmp.39 = false;
+        invoke %tmp.31 %tmp.32(%tmp.37, %tmp.38, %tmp.39);
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_59_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_8_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_74_8_if_end:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 78 8 ]
+        %tmp.40 = lgetv %dc;
+        %tmp.41 = getv function %tmp.40 :setColor;
+        %tmp.42 = 0;
+        %tmp.43 = 0xd0dce0;
+        invoke %tmp.40 %tmp.41(%tmp.42, %tmp.43);
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 79 8 ]
+        %tmp.44 = lgetv %dc;
+        %tmp.45 = getv function %tmp.44 :clear;
+        invoke %tmp.44 %tmp.45();
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 81 8 ]
+        %tmp.46 = lgetv %dc;
+        %tmp.47 = getv function %tmp.46 :setColor;
+        %tmp.48 = 0x646f73;
+        %tmp.49 = -1;
+        invoke %tmp.46 %tmp.47(%tmp.48, %tmp.49);
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 82 8 ]
+        %tmp.50 = lgetv %dc;
+        %tmp.51 = getv function %tmp.50 :fillRectangle;
+        %tmp.52 = 0;
+        %tmp.53 = 0;
+        %tmp.55 = getv ? :sw;
+        %tmp.57 = getv ? :sh;
+        %tmp.58 = 10;
+        %tmp.59 = mul %tmp.57 %tmp.58;
+        %tmp.60 = 100;
+        %tmp.61 = div %tmp.59 %tmp.60;
+        invoke %tmp.50 %tmp.51(%tmp.52, %tmp.53, %tmp.55, %tmp.61);
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 83 8 ]
+        %tmp.62 = lgetv %dc;
+        %tmp.63 = getv function %tmp.62 :fillRectangle;
+        %tmp.64 = 0;
+        %tmp.66 = getv ? :sh;
+        %tmp.67 = 80;
+        %tmp.68 = mul %tmp.66 %tmp.67;
+        %tmp.69 = 100;
+        %tmp.70 = div %tmp.68 %tmp.69;
+        %tmp.72 = getv ? :sw;
+        %tmp.74 = getv ? :sh;
+        %tmp.75 = 20;
+        %tmp.76 = mul %tmp.74 %tmp.75;
+        %tmp.77 = 100;
+        %tmp.78 = div %tmp.76 %tmp.77;
+        invoke %tmp.62 %tmp.63(%tmp.64, %tmp.70, %tmp.72, %tmp.78);
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 85 8 ]
+        %tmp.79 = getv self :y;
+        %tmp.81 = getv ? :dy;
+        %tmp.82 = add %tmp.79 %tmp.81;
+        putv self :y dup %tmp.82;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 86 8 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_86_8_if_stmt:
+        %tmp.84 = getv ? :y;
+        %tmp.86 = getv ? :iy;
+        %tmp.87 = gt %tmp.84 %tmp.86;
+        bf %tmp.87 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_86_8_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_86_8_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_86_20_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 87 12 ]
+        %tmp.89 = getv ? :iy;
+        putv self :y %tmp.89;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 88 12 ]
+        %tmp.90 = 0.0;
+        putv self :dy %tmp.90;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_86_20_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_86_8_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_86_8_if_end:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 91 8 ]
+        [ "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_72_40_start" "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_72_40_stop" ]
+        %gap.1 = local;
+        %tmp.92 = getv ? :wh;
+        %tmp.93 = 200;
+        %tmp.94 = mul %tmp.92 %tmp.93;
+        %tmp.95 = 100;
+        %tmp.96 = div %tmp.94 %tmp.95;
+        %tmp.98 = getv ? :wh;
+        %tmp.99 = 25;
+        %tmp.100 = mul %tmp.98 %tmp.99;
+        %tmp.102 = getv ? :diff;
+        %tmp.103 = mul %tmp.100 %tmp.102;
+        %tmp.104 = 100;
+        %tmp.105 = div %tmp.103 %tmp.104;
+        %tmp.106 = sub %tmp.96 %tmp.105;
+        lputv %gap.1 %tmp.106;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 92 8 ]
+        [ "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_72_40_start" "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_72_40_stop" ]
+        %highscore.2 = local;
+        %tmp.108 = getv ? :highscores;
+        %tmp.110 = getv ? :diff;
+        %tmp.111 = agetv %tmp.108 %tmp.110;
+        lputv %highscore.2 %tmp.111;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 94 8 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_94_8_if_stmt:
+        %tmp.113 = getv ? :newgame;
+        bf %tmp.113 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_94_8_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_94_8_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_94_21_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 95 12 ]
+        %tmp.114 = newa 1;
+        %tmp.115 = newa 2;
+        %tmp.117 = getv ? :sw;
+        %tmp.118 = 75;
+        %tmp.119 = mul %tmp.117 %tmp.118;
+        %tmp.120 = 100;
+        %tmp.121 = div %tmp.119 %tmp.120;
+        %tmp.122 = dup %tmp.115;
+        %tmp.123 = aputv %tmp.122 0 %tmp.121;
+        %tmp.125 = getv ? :sh;
+        %tmp.126 = 2;
+        %tmp.127 = div %tmp.125 %tmp.126;
+        %tmp.128 = dup %tmp.123;
+        %tmp.129 = aputv %tmp.128 1 %tmp.127;
+        %tmp.130 = dup %tmp.114;
+        %tmp.131 = aputv %tmp.130 0 %tmp.129;
+        putv self :arms %tmp.131;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_94_21_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_94_8_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_94_8_if_end:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 97 8 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_97_8_if_stmt:
+        %tmp.133 = getv ? :arms;
+        %tmp.134 = 0;
+        %tmp.135 = agetv %tmp.133 %tmp.134;
+        %tmp.136 = 0;
+        %tmp.137 = agetv %tmp.135 %tmp.136;
+        %tmp.138 = 0;
+        %tmp.140 = getv ? :aw;
+        %tmp.141 = sub %tmp.138 %tmp.140;
+        %tmp.142 = lt %tmp.137 %tmp.141;
+        bf %tmp.142 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_97_8_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_97_8_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_97_31_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 98 12 ]
+        %tmp.144 = getv ? :arms;
+        %tmp.145 = getv function %tmp.144 :slice;
+        %tmp.146 = 1;
+        %tmp.147 = null;
+        %tmp.148 = invoke %tmp.144 %tmp.145(%tmp.146, %tmp.147);
+        putv self :arms %tmp.148;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_97_31_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_97_8_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_97_8_if_end:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 100 8 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_100_8_if_stmt:
+        %tmp.150 = getv ? :arms;
+        %tmp.152 = getv ? :arms;
+        %tmp.153 = getv function %tmp.152 :size;
+        %tmp.154 = invoke %tmp.152 %tmp.153();
+        %tmp.155 = 1;
+        %tmp.156 = sub %tmp.154 %tmp.155;
+        %tmp.157 = agetv %tmp.150 %tmp.156;
+        %tmp.158 = 0;
+        %tmp.159 = agetv %tmp.157 %tmp.158;
+        %tmp.161 = getv ? :sw;
+        %tmp.162 = 2;
+        %tmp.163 = div %tmp.161 %tmp.162;
+        %tmp.164 = lt %tmp.159 %tmp.163;
+        bf %tmp.164 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_100_8_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_100_8_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_100_43_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 101 12 ]
+        %tmp.166 = getv ? :arms;
+        %tmp.167 = getv function %tmp.166 :add;
+        %tmp.168 = newa 2;
+        %tmp.170 = getv ? :sw;
+        %tmp.172 = getv ? :aw;
+        %tmp.173 = add %tmp.170 %tmp.172;
+        %tmp.174 = dup %tmp.168;
+        %tmp.175 = aputv %tmp.174 0 %tmp.173;
+        %tmp.177 = getv ? :Math;
+        %tmp.178 = getv function %tmp.177 :rand;
+        %tmp.179 = invoke %tmp.177 %tmp.178();
+        %tmp.181 = getv ? :maxarmy;
+        %tmp.183 = getv ? :minarmy;
+        %tmp.184 = sub %tmp.181 %tmp.183;
+        %tmp.185 = mod %tmp.179 %tmp.184;
+        %tmp.187 = getv ? :minarmy;
+        %tmp.188 = add %tmp.185 %tmp.187;
+        %tmp.189 = dup %tmp.175;
+        %tmp.190 = aputv %tmp.189 1 %tmp.188;
+        invoke %tmp.166 %tmp.167(%tmp.190);
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_100_43_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_100_8_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_100_8_if_end:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 103 8 ]
+        [ "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_72_40_start" "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_72_40_stop" ]
+        %inrange.3 = local;
+        %tmp.191 = false;
+        lputv %inrange.3 %tmp.191;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 104 8 ]
+        for @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_8_for_test @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_8_for_incr @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_8_for_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_8_for_init:
+        [ "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_8_for_begin" "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_8_for_end" ]
+        %i.4 = local;
+        %tmp.192 = 0;
+        lputv %i.4 %tmp.192;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_8_for_test:
+        %tmp.194 = lgetv %i.4;
+        %tmp.196 = getv ? :arms;
+        %tmp.197 = getv function %tmp.196 :size;
+        %tmp.198 = invoke %tmp.196 %tmp.197();
+        %tmp.199 = lt %tmp.194 %tmp.198;
+        bf %tmp.199 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_8_for_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_8_for_begin:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_40_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 105 12 ]
+        [ "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_40_start" "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_40_stop" ]
+        %topy.5 = local;
+        %tmp.201 = getv ? :arms;
+        %tmp.203 = lgetv %i.4;
+        %tmp.204 = agetv %tmp.201 %tmp.203;
+        %tmp.205 = 1;
+        %tmp.206 = agetv %tmp.204 %tmp.205;
+        %tmp.208 = getv ? :ah;
+        %tmp.209 = sub %tmp.206 %tmp.208;
+        %tmp.211 = lgetv %gap.1;
+        %tmp.212 = 2;
+        %tmp.213 = div %tmp.211 %tmp.212;
+        %tmp.214 = sub %tmp.209 %tmp.213;
+        lputv %topy.5 %tmp.214;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 106 12 ]
+        [ "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_40_start" "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_40_stop" ]
+        %boty.6 = local;
+        %tmp.216 = getv ? :arms;
+        %tmp.218 = lgetv %i.4;
+        %tmp.219 = agetv %tmp.216 %tmp.218;
+        %tmp.220 = 1;
+        %tmp.221 = agetv %tmp.219 %tmp.220;
+        %tmp.223 = lgetv %gap.1;
+        %tmp.224 = 2;
+        %tmp.225 = div %tmp.223 %tmp.224;
+        %tmp.226 = add %tmp.221 %tmp.225;
+        lputv %boty.6 %tmp.226;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 107 12 ]
+        [ "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_40_start" "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_40_stop" ]
+        %topimg.7 = local;
+        %tmp.228 = getv ? :armtop;
+        lputv %topimg.7 %tmp.228;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 108 12 ]
+        [ "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_40_start" "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_40_stop" ]
+        %botimg.8 = local;
+        %tmp.230 = getv ? :armbot;
+        lputv %botimg.8 %tmp.230;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 109 12 ]
+        %tmp.231 = getv self :arms;
+        %tmp.233 = lgetv %i.4;
+        %tmp.234 = agetv %tmp.231 %tmp.233;
+        %tmp.235 = getv self :arms;
+        %tmp.237 = lgetv %i.4;
+        %tmp.238 = agetv %tmp.235 %tmp.237;
+        %tmp.239 = 0;
+        %tmp.240 = agetv %tmp.238 %tmp.239;
+        %tmp.242 = getv ? :armdx;
+        %tmp.243 = sub %tmp.240 %tmp.242;
+        %tmp.244 = 0;
+        aputv %tmp.234 %tmp.244 dup %tmp.243;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 110 12 ]
+        [ "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_40_start" "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_40_stop" ]
+        %armx.9 = local;
+        %tmp.246 = getv ? :arms;
+        %tmp.248 = lgetv %i.4;
+        %tmp.249 = agetv %tmp.246 %tmp.248;
+        %tmp.250 = 0;
+        %tmp.251 = agetv %tmp.249 %tmp.250;
+        lputv %armx.9 %tmp.251;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 111 12 ]
+        [ "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_40_start" "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_40_stop" ]
+        %army.10 = local;
+        %tmp.253 = getv ? :arms;
+        %tmp.255 = lgetv %i.4;
+        %tmp.256 = agetv %tmp.253 %tmp.255;
+        %tmp.257 = 1;
+        %tmp.258 = agetv %tmp.256 %tmp.257;
+        lputv %army.10 %tmp.258;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 112 12 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_112_12_if_stmt:
+        %tmp.260 = lgetv %armx.9;
+        %tmp.262 = getv ? :x;
+        %tmp.263 = sub %tmp.260 %tmp.262;
+        %tmp.264 = getv function %tmp.263 :abs;
+        %tmp.265 = invoke %tmp.263 %tmp.264();
+        %tmp.267 = getv ? :ww;
+        %tmp.268 = 3;
+        %tmp.269 = div %tmp.267 %tmp.268;
+        %tmp.270 = lte %tmp.265 %tmp.269;
+        bf %tmp.270 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_112_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_112_12_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_112_40_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 113 16 ]
+        %tmp.271 = true;
+        lputv %inrange.3 %tmp.271;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 114 16 ]
+        %tmp.272 = true;
+        putv self :checking %tmp.272;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 115 16 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_115_16_if_stmt:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_115_20_begin:
+        %tmp.274 = getv ? :y;
+        %tmp.276 = getv ? :wh;
+        %tmp.277 = 3;
+        %tmp.278 = div %tmp.276 %tmp.277;
+        %tmp.279 = sub %tmp.274 %tmp.278;
+        %tmp.281 = lgetv %army.10;
+        %tmp.283 = lgetv %gap.1;
+        %tmp.284 = 2;
+        %tmp.285 = div %tmp.283 %tmp.284;
+        %tmp.286 = sub %tmp.281 %tmp.285;
+        %tmp.287 = lt %tmp.279 %tmp.286;
+        %tmp.288 = dup %tmp.287;
+        bt %tmp.288 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_115_43_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_115_43_false:
+        %tmp.290 = getv ? :y;
+        %tmp.292 = getv ? :wh;
+        %tmp.293 = 3;
+        %tmp.294 = div %tmp.292 %tmp.293;
+        %tmp.295 = add %tmp.290 %tmp.294;
+        %tmp.297 = lgetv %army.10;
+        %tmp.299 = lgetv %gap.1;
+        %tmp.300 = 2;
+        %tmp.301 = div %tmp.299 %tmp.300;
+        %tmp.302 = add %tmp.297 %tmp.301;
+        %tmp.303 = gt %tmp.295 %tmp.302;
+        %tmp.304 = or %tmp.287 %tmp.303;
+        push %tmp.304;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_115_43_end:
+        %tmp.305 = phi [%tmp.288 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_115_20_begin] [%tmp.304 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_115_43_false] [%tmp.305 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_115_43_end];
+        bf %tmp.305 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_115_16_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_115_16_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_115_64_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 124 20 ]
+        %tmp.306 = true;
+        putv self :hit %tmp.306;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 125 20 ]
+        %tmp.308 = getv ? :timer;
+        %tmp.309 = getv function %tmp.308 :stop;
+        invoke %tmp.308 %tmp.309();
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 126 20 ]
+        %tmp.311 = getv ? :Time;
+        %tmp.312 = getv function %tmp.311 :now;
+        %tmp.313 = invoke %tmp.311 %tmp.312();
+        %tmp.314 = getv function %tmp.313 :value;
+        %tmp.315 = invoke %tmp.313 %tmp.314();
+        putv self :hittime %tmp.315;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 127 20 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_127_20_if_stmt:
+        %tmp.317 = getv ? :y;
+        %tmp.319 = getv ? :arms;
+        %tmp.321 = lgetv %i.4;
+        %tmp.322 = agetv %tmp.319 %tmp.321;
+        %tmp.323 = 1;
+        %tmp.324 = agetv %tmp.322 %tmp.323;
+        %tmp.325 = gt %tmp.317 %tmp.324;
+        bf %tmp.325 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_127_20_if_false;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_127_20_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_127_40_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 128 24 ]
+        %tmp.327 = getv ? :armbotwat;
+        lputv %botimg.8 %tmp.327;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_127_40_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_127_20_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_127_20_if_false:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_129_27_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 130 24 ]
+        %tmp.329 = getv ? :armtopwat;
+        lputv %topimg.7 %tmp.329;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_129_27_stop:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_127_20_if_end:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_115_64_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_115_16_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_115_16_if_end:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_112_40_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_112_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_112_12_if_end:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 134 12 ]
+        %tmp.330 = lgetv %dc;
+        %tmp.331 = getv function %tmp.330 :drawBitmap;
+        %tmp.333 = getv ? :arms;
+        %tmp.335 = lgetv %i.4;
+        %tmp.336 = agetv %tmp.333 %tmp.335;
+        %tmp.337 = 0;
+        %tmp.338 = agetv %tmp.336 %tmp.337;
+        %tmp.340 = getv ? :aw;
+        %tmp.341 = 2;
+        %tmp.342 = div %tmp.340 %tmp.341;
+        %tmp.343 = sub %tmp.338 %tmp.342;
+        %tmp.345 = getv ? :holeyt;
+        %tmp.347 = getv ? :armholetopback;
+        invoke %tmp.330 %tmp.331(%tmp.343, %tmp.345, %tmp.347);
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 135 12 ]
+        %tmp.348 = lgetv %dc;
+        %tmp.349 = getv function %tmp.348 :drawBitmap;
+        %tmp.351 = getv ? :arms;
+        %tmp.353 = lgetv %i.4;
+        %tmp.354 = agetv %tmp.351 %tmp.353;
+        %tmp.355 = 0;
+        %tmp.356 = agetv %tmp.354 %tmp.355;
+        %tmp.358 = getv ? :aw;
+        %tmp.359 = 2;
+        %tmp.360 = div %tmp.358 %tmp.359;
+        %tmp.361 = sub %tmp.356 %tmp.360;
+        %tmp.363 = getv ? :holeyb;
+        %tmp.365 = getv ? :armholebotback;
+        invoke %tmp.348 %tmp.349(%tmp.361, %tmp.363, %tmp.365);
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 136 12 ]
+        %tmp.366 = lgetv %dc;
+        %tmp.367 = getv function %tmp.366 :drawBitmap;
+        %tmp.369 = getv ? :arms;
+        %tmp.371 = lgetv %i.4;
+        %tmp.372 = agetv %tmp.369 %tmp.371;
+        %tmp.373 = 0;
+        %tmp.374 = agetv %tmp.372 %tmp.373;
+        %tmp.376 = getv ? :aw;
+        %tmp.377 = 2;
+        %tmp.378 = div %tmp.376 %tmp.377;
+        %tmp.379 = sub %tmp.374 %tmp.378;
+        %tmp.381 = lgetv %topy.5;
+        %tmp.383 = lgetv %topimg.7;
+        invoke %tmp.366 %tmp.367(%tmp.379, %tmp.381, %tmp.383);
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 137 12 ]
+        %tmp.384 = lgetv %dc;
+        %tmp.385 = getv function %tmp.384 :drawBitmap;
+        %tmp.387 = getv ? :arms;
+        %tmp.389 = lgetv %i.4;
+        %tmp.390 = agetv %tmp.387 %tmp.389;
+        %tmp.391 = 0;
+        %tmp.392 = agetv %tmp.390 %tmp.391;
+        %tmp.394 = getv ? :aw;
+        %tmp.395 = 2;
+        %tmp.396 = div %tmp.394 %tmp.395;
+        %tmp.397 = sub %tmp.392 %tmp.396;
+        %tmp.399 = lgetv %boty.6;
+        %tmp.401 = lgetv %botimg.8;
+        invoke %tmp.384 %tmp.385(%tmp.397, %tmp.399, %tmp.401);
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 138 12 ]
+        %tmp.402 = lgetv %dc;
+        %tmp.403 = getv function %tmp.402 :drawBitmap;
+        %tmp.405 = getv ? :arms;
+        %tmp.407 = lgetv %i.4;
+        %tmp.408 = agetv %tmp.405 %tmp.407;
+        %tmp.409 = 0;
+        %tmp.410 = agetv %tmp.408 %tmp.409;
+        %tmp.412 = getv ? :aw;
+        %tmp.413 = 2;
+        %tmp.414 = div %tmp.412 %tmp.413;
+        %tmp.415 = sub %tmp.410 %tmp.414;
+        %tmp.417 = getv ? :holeyt;
+        %tmp.419 = getv ? :armholetopfront;
+        invoke %tmp.402 %tmp.403(%tmp.415, %tmp.417, %tmp.419);
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 139 12 ]
+        %tmp.420 = lgetv %dc;
+        %tmp.421 = getv function %tmp.420 :drawBitmap;
+        %tmp.423 = getv ? :arms;
+        %tmp.425 = lgetv %i.4;
+        %tmp.426 = agetv %tmp.423 %tmp.425;
+        %tmp.427 = 0;
+        %tmp.428 = agetv %tmp.426 %tmp.427;
+        %tmp.430 = getv ? :aw;
+        %tmp.431 = 2;
+        %tmp.432 = div %tmp.430 %tmp.431;
+        %tmp.433 = sub %tmp.428 %tmp.432;
+        %tmp.435 = getv ? :holeyb;
+        %tmp.437 = getv ? :armholebotfront;
+        invoke %tmp.420 %tmp.421(%tmp.433, %tmp.435, %tmp.437);
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_40_stop:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_8_for_incr:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 104 ]
+        %tmp.440 = lgetv %i.4;
+        %tmp.441 = add %tmp.440 1;
+        lputv %i.4 %tmp.441;
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_8_for_test;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_104_8_for_end:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 141 8 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_141_8_if_stmt:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_141_12_begin:
+        %tmp.443 = getv ? :checking;
+        %tmp.444 = dup %tmp.443;
+        bf %tmp.444 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_141_25_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_141_25_true:
+        %tmp.446 = lgetv %inrange.3;
+        %tmp.447 = not %tmp.446;
+        %tmp.448 = and %tmp.443 %tmp.447;
+        push %tmp.448;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_141_25_end:
+        %tmp.449 = phi [%tmp.444 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_141_12_begin] [%tmp.448 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_141_25_true] [%tmp.449 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_141_25_end];
+        bf %tmp.449 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_141_8_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_141_8_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_141_35_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 142 12 ]
+        %tmp.452 = getv ? :score;
+        %tmp.453 = add %tmp.452 1;
+        putv self :score dup %tmp.453;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 143 12 ]
+        %tmp.454 = false;
+        putv self :checking %tmp.454;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_141_35_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_141_8_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_141_8_if_end:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 146 8 ]
+        %tmp.455 = lgetv %dc;
+        %tmp.456 = getv function %tmp.455 :setColor;
+        %tmp.457 = 0;
+        %tmp.458 = -1;
+        invoke %tmp.455 %tmp.456(%tmp.457, %tmp.458);
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 147 8 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_147_8_if_stmt:
+        %tmp.460 = getv ? :newgame;
+        bf %tmp.460 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_147_8_if_false;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_147_8_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_147_21_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 148 12 ]
+        %tmp.461 = lgetv %dc;
+        %tmp.462 = getv function %tmp.461 :drawText;
+        %tmp.464 = getv ? :scorex;
+        %tmp.466 = getv ? :scorey;
+        %tmp.467 = getm $.Toybox.Graphics;
+        %tmp.468 = getv %tmp.467 :FONT_SMALL;
+        %tmp.469 = "High: ";
+        %tmp.471 = lgetv %highscore.2;
+        %tmp.472 = add %tmp.469 %tmp.471;
+        %tmp.473 = getm $.Toybox.Graphics;
+        %tmp.474 = getv %tmp.473 :TEXT_JUSTIFY_LEFT;
+        %tmp.475 = getm $.Toybox.Graphics;
+        %tmp.476 = getv %tmp.475 :TEXT_JUSTIFY_VCENTER;
+        %tmp.477 = bitor %tmp.474 %tmp.476;
+        invoke %tmp.461 %tmp.462(%tmp.464, %tmp.466, %tmp.468, %tmp.472, %tmp.477);
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 149 12 ]
+        %tmp.478 = lgetv %dc;
+        %tmp.479 = getv function %tmp.478 :drawText;
+        %tmp.481 = getv ? :startx;
+        %tmp.483 = getv ? :starty;
+        %tmp.484 = getm $.Toybox.Graphics;
+        %tmp.485 = getv %tmp.484 :FONT_SMALL;
+        %tmp.486 = "Tap to\nFlap";
+        %tmp.487 = getm $.Toybox.Graphics;
+        %tmp.488 = getv %tmp.487 :TEXT_JUSTIFY_CENTER;
+        %tmp.489 = getm $.Toybox.Graphics;
+        %tmp.490 = getv %tmp.489 :TEXT_JUSTIFY_VCENTER;
+        %tmp.491 = bitor %tmp.488 %tmp.490;
+        invoke %tmp.478 %tmp.479(%tmp.481, %tmp.483, %tmp.485, %tmp.486, %tmp.491);
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 150 12 ]
+        [ "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_147_21_start" "C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_147_21_stop" ]
+        %tmp.11 = local;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 151 12 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_151_12_if_stmt:
+        %tmp.493 = getv ? :diff;
+        %tmp.494 = 0;
+        %tmp.495 = eq %tmp.493 %tmp.494;
+        bf %tmp.495 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_151_12_if_false;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_151_12_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_151_27_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 151 29 ]
+        %tmp.496 = "Easy";
+        lputv %tmp.11 %tmp.496;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_151_27_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_151_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_151_12_if_false:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 152 17 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_152_17_if_stmt:
+        %tmp.498 = getv ? :diff;
+        %tmp.499 = 1;
+        %tmp.500 = eq %tmp.498 %tmp.499;
+        bf %tmp.500 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_152_17_if_false;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_152_17_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_152_32_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 152 34 ]
+        %tmp.501 = "Medium";
+        lputv %tmp.11 %tmp.501;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_152_32_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_152_17_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_152_17_if_false:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_153_17_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 153 19 ]
+        %tmp.502 = "Hard";
+        lputv %tmp.11 %tmp.502;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_153_17_stop:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_152_17_if_end:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_151_12_if_end:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 154 12 ]
+        %tmp.503 = lgetv %dc;
+        %tmp.504 = getv function %tmp.503 :drawText;
+        %tmp.506 = getv ? :sw;
+        %tmp.507 = 74;
+        %tmp.508 = mul %tmp.506 %tmp.507;
+        %tmp.509 = 100;
+        %tmp.510 = div %tmp.508 %tmp.509;
+        %tmp.512 = getv ? :sh;
+        %tmp.513 = 2;
+        %tmp.514 = div %tmp.512 %tmp.513;
+        %tmp.515 = getm $.Toybox.Graphics;
+        %tmp.516 = getv %tmp.515 :FONT_XTINY;
+        %tmp.518 = lgetv %tmp.11;
+        %tmp.519 = "\n(tap)";
+        %tmp.520 = add %tmp.518 %tmp.519;
+        %tmp.521 = getm $.Toybox.Graphics;
+        %tmp.522 = getv %tmp.521 :TEXT_JUSTIFY_CENTER;
+        %tmp.523 = getm $.Toybox.Graphics;
+        %tmp.524 = getv %tmp.523 :TEXT_JUSTIFY_VCENTER;
+        %tmp.525 = bitor %tmp.522 %tmp.524;
+        invoke %tmp.503 %tmp.504(%tmp.510, %tmp.514, %tmp.516, %tmp.520, %tmp.525);
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_147_21_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_147_8_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_147_8_if_false:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_155_15_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 156 12 ]
+        %tmp.526 = lgetv %dc;
+        %tmp.527 = getv function %tmp.526 :drawText;
+        %tmp.529 = getv ? :scorex;
+        %tmp.531 = getv ? :scorey;
+        %tmp.532 = getm $.Toybox.Graphics;
+        %tmp.533 = getv %tmp.532 :FONT_SMALL;
+        %tmp.535 = getv ? :score;
+        %tmp.536 = getm $.Toybox.Graphics;
+        %tmp.537 = getv %tmp.536 :TEXT_JUSTIFY_LEFT;
+        %tmp.538 = getm $.Toybox.Graphics;
+        %tmp.539 = getv %tmp.538 :TEXT_JUSTIFY_VCENTER;
+        %tmp.540 = bitor %tmp.537 %tmp.539;
+        invoke %tmp.526 %tmp.527(%tmp.529, %tmp.531, %tmp.533, %tmp.535, %tmp.540);
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_155_15_stop:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_147_8_if_end:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 159 8 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_159_8_if_stmt:
+        %tmp.542 = getv ? :hit;
+        bf %tmp.542 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_159_8_if_false;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_159_8_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_159_17_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 160 12 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_160_12_if_stmt:
+        %tmp.544 = getv ? :score;
+        %tmp.546 = lgetv %highscore.2;
+        %tmp.547 = gt %tmp.544 %tmp.546;
+        bf %tmp.547 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_160_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_160_12_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_160_35_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 161 16 ]
+        %tmp.549 = getv ? :score;
+        lputv %highscore.2 %tmp.549;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 162 16 ]
+        %tmp.550 = getv self :highscores;
+        %tmp.552 = lgetv %highscore.2;
+        %tmp.554 = getv ? :diff;
+        aputv %tmp.550 %tmp.554 %tmp.552;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 163 16 ]
+        %tmp.555 = getm $.Toybox.Application.Storage;
+        %tmp.556 = getv function %tmp.555 :setValue;
+        %tmp.557 = "highscores";
+        %tmp.559 = getv ? :highscores;
+        invoke %tmp.555 %tmp.556(%tmp.557, %tmp.559);
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_160_35_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_160_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_160_12_if_end:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_159_17_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_159_8_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_159_8_if_false:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_165_15_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 166 12 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_166_12_if_stmt:
+        %tmp.561 = getv ? :dy;
+        %tmp.562 = 0;
+        %tmp.563 = gt %tmp.561 %tmp.562;
+        bf %tmp.563 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_166_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_166_12_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_166_24_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 166 26 ]
+        %tmp.564 = getv self :dy;
+        %tmp.566 = getv ? :dy;
+        %tmp.567 = .4;
+        %tmp.568 = mul %tmp.566 %tmp.567;
+        %tmp.569 = add %tmp.564 %tmp.568;
+        putv self :dy dup %tmp.569;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_166_24_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_166_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_166_12_if_end:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 167 12 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_12_if_stmt:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_16_begin:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_16_begin:
+        %tmp.571 = getv ? :dy;
+        %tmp.572 = -3;
+        %tmp.573 = gt %tmp.571 %tmp.572;
+        %tmp.574 = dup %tmp.573;
+        bf %tmp.574 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_28_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_28_true:
+        %tmp.576 = getv ? :dy;
+        %tmp.577 = 0;
+        %tmp.578 = lte %tmp.576 %tmp.577;
+        %tmp.579 = and %tmp.573 %tmp.578;
+        push %tmp.579;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_28_end:
+        %tmp.580 = phi [%tmp.574 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_16_begin] [%tmp.579 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_28_true] [%tmp.580 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_28_end];
+        %tmp.581 = dup %tmp.580;
+        bf %tmp.581 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_40_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_40_true:
+        %tmp.583 = getv ? :y;
+        %tmp.585 = getv ? :iy;
+        %tmp.586 = lt %tmp.583 %tmp.585;
+        %tmp.587 = and %tmp.580 %tmp.586;
+        push %tmp.587;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_40_end:
+        %tmp.588 = phi [%tmp.581 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_16_begin] [%tmp.587 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_40_true] [%tmp.588 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_40_end];
+        bf %tmp.588 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_12_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_48_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 167 50 ]
+        %tmp.589 = 1.0;
+        putv self :dy %tmp.589;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_48_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_167_12_if_end:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 168 12 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_168_12_if_stmt:
+        %tmp.591 = getv ? :dy;
+        %tmp.592 = 0;
+        %tmp.593 = lt %tmp.591 %tmp.592;
+        bf %tmp.593 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_168_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_168_12_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_168_24_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 168 26 ]
+        %tmp.594 = getv self :dy;
+        %tmp.596 = getv ? :dy;
+        %tmp.597 = .4;
+        %tmp.598 = mul %tmp.596 %tmp.597;
+        %tmp.599 = sub %tmp.594 %tmp.598;
+        putv self :dy dup %tmp.599;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_168_24_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_168_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_168_12_if_end:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 169 12 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_169_12_if_stmt:
+        %tmp.601 = getv ? :dy;
+        %tmp.603 = getv ? :dym;
+        %tmp.604 = gt %tmp.601 %tmp.603;
+        bf %tmp.604 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_169_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_169_12_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_169_26_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 169 28 ]
+        %tmp.606 = getv ? :dym;
+        putv self :dy %tmp.606;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_169_26_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_169_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_169_12_if_end:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 171 12 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_171_12_if_stmt:
+        %tmp.608 = getv ? :flapping;
+        %tmp.609 = 0;
+        %tmp.610 = gt %tmp.608 %tmp.609;
+        bf %tmp.610 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_171_12_if_false;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_171_12_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_171_30_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 172 16 ]
+        %tmp.611 = lgetv %dc;
+        %tmp.612 = getv function %tmp.611 :drawBitmap;
+        %tmp.614 = getv ? :x;
+        %tmp.616 = getv ? :y;
+        %tmp.618 = getv ? :watchup;
+        invoke %tmp.611 %tmp.612(%tmp.614, %tmp.616, %tmp.618);
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 173 16 ]
+        %tmp.621 = getv ? :flapping;
+        %tmp.622 = sub %tmp.621 1;
+        putv self :flapping dup %tmp.622;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 174 16 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_174_16_if_stmt:
+        %tmp.624 = getv ? :flapping;
+        %tmp.625 = 0;
+        %tmp.626 = eq %tmp.624 %tmp.625;
+        bf %tmp.626 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_174_16_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_174_16_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_174_35_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 175 20 ]
+        %tmp.627 = 0;
+        %tmp.629 = getv ? :dym;
+        %tmp.630 = sub %tmp.627 %tmp.629;
+        putv self :dy %tmp.630;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_174_35_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_174_16_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_174_16_if_end:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_171_30_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_171_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_171_12_if_false:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 177 19 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_177_19_if_stmt:
+        %tmp.632 = getv ? :y;
+        %tmp.634 = getv ? :iy;
+        %tmp.635 = eq %tmp.632 %tmp.634;
+        bf %tmp.635 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_177_19_if_false;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_177_19_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_177_32_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 178 16 ]
+        %tmp.636 = lgetv %dc;
+        %tmp.637 = getv function %tmp.636 :drawBitmap;
+        %tmp.639 = getv ? :x;
+        %tmp.641 = getv ? :ww;
+        %tmp.642 = 2;
+        %tmp.643 = div %tmp.641 %tmp.642;
+        %tmp.644 = sub %tmp.639 %tmp.643;
+        %tmp.646 = getv ? :y;
+        %tmp.648 = getv ? :wh;
+        %tmp.649 = 2;
+        %tmp.650 = div %tmp.648 %tmp.649;
+        %tmp.651 = sub %tmp.646 %tmp.650;
+        %tmp.653 = getv ? :watchflat;
+        invoke %tmp.636 %tmp.637(%tmp.644, %tmp.651, %tmp.653);
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_177_32_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_177_19_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_177_19_if_false:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 179 19 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_179_19_if_stmt:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_179_23_begin:
+        %tmp.655 = getv ? :dy;
+        %tmp.656 = -4;
+        %tmp.657 = gt %tmp.655 %tmp.656;
+        %tmp.658 = dup %tmp.657;
+        bf %tmp.658 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_179_35_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_179_35_true:
+        %tmp.660 = getv ? :dy;
+        %tmp.661 = 4;
+        %tmp.662 = lt %tmp.660 %tmp.661;
+        %tmp.663 = and %tmp.657 %tmp.662;
+        push %tmp.663;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_179_35_end:
+        %tmp.664 = phi [%tmp.658 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_179_23_begin] [%tmp.663 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_179_35_true] [%tmp.664 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_179_35_end];
+        bf %tmp.664 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_179_19_if_false;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_179_19_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_179_43_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 180 16 ]
+        %tmp.665 = lgetv %dc;
+        %tmp.666 = getv function %tmp.665 :drawBitmap;
+        %tmp.668 = getv ? :x;
+        %tmp.670 = getv ? :ww;
+        %tmp.671 = 2;
+        %tmp.672 = div %tmp.670 %tmp.671;
+        %tmp.673 = sub %tmp.668 %tmp.672;
+        %tmp.675 = getv ? :y;
+        %tmp.677 = getv ? :wh;
+        %tmp.678 = 2;
+        %tmp.679 = div %tmp.677 %tmp.678;
+        %tmp.680 = sub %tmp.675 %tmp.679;
+        %tmp.682 = getv ? :watchflat;
+        invoke %tmp.665 %tmp.666(%tmp.673, %tmp.680, %tmp.682);
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_179_43_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_179_19_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_179_19_if_false:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 181 19 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_181_19_if_stmt:
+        %tmp.684 = getv ? :dy;
+        %tmp.685 = 0;
+        %tmp.686 = gt %tmp.684 %tmp.685;
+        bf %tmp.686 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_181_19_if_false;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_181_19_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_181_31_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 182 16 ]
+        %tmp.687 = lgetv %dc;
+        %tmp.688 = getv function %tmp.687 :drawBitmap;
+        %tmp.690 = getv ? :x;
+        %tmp.692 = getv ? :ww;
+        %tmp.693 = 2;
+        %tmp.694 = div %tmp.692 %tmp.693;
+        %tmp.695 = sub %tmp.690 %tmp.694;
+        %tmp.697 = getv ? :y;
+        %tmp.699 = getv ? :wh;
+        %tmp.700 = 2;
+        %tmp.701 = div %tmp.699 %tmp.700;
+        %tmp.702 = sub %tmp.697 %tmp.701;
+        %tmp.704 = getv ? :watchup;
+        invoke %tmp.687 %tmp.688(%tmp.695, %tmp.702, %tmp.704);
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_181_31_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_181_19_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_181_19_if_false:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_183_19_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 184 16 ]
+        %tmp.705 = lgetv %dc;
+        %tmp.706 = getv function %tmp.705 :drawBitmap;
+        %tmp.708 = getv ? :x;
+        %tmp.710 = getv ? :ww;
+        %tmp.711 = 2;
+        %tmp.712 = div %tmp.710 %tmp.711;
+        %tmp.713 = sub %tmp.708 %tmp.712;
+        %tmp.715 = getv ? :y;
+        %tmp.717 = getv ? :wh;
+        %tmp.718 = 2;
+        %tmp.719 = div %tmp.717 %tmp.718;
+        %tmp.720 = sub %tmp.715 %tmp.719;
+        %tmp.722 = getv ? :watchdown;
+        invoke %tmp.705 %tmp.706(%tmp.713, %tmp.720, %tmp.722);
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_183_19_stop:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_181_19_if_end:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_179_19_if_end:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_177_19_if_end:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_171_12_if_end:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_165_15_stop:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_159_8_if_end:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_72_40_stop:
+    }
+    [ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 189; ]
+    function onTimer() as Void {
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_189_31_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 190 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :requestUpdate;
+        invoke %tmp.1 %tmp.2();
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchView_mc_189_31_stop:
+    }
+    [ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 196; ]
+    function onHide() as Void {
+    }
+}
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc"; @line = 1; ]
+<init> {
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 7 4 ]
+    %tmp.1 = getm $.Toybox.System;
+    %tmp.2 = getv function %tmp.1 :getDeviceSettings;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    putv self :ds %tmp.3;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 8 4 ]
+    %tmp.5 = getv ? :ds;
+    %tmp.6 = getv %tmp.5 :screenWidth;
+    putv self :sw %tmp.6;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 9 4 ]
+    %tmp.8 = getv ? :ds;
+    %tmp.9 = getv %tmp.8 :screenHeight;
+    putv self :sh %tmp.9;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 11 4 ]
+    %tmp.10 = getm $.Toybox.WatchUi;
+    %tmp.11 = getv function %tmp.10 :loadResource;
+    %tmp.13 = getv ? :Rez;
+    %tmp.14 = getv %tmp.13 :Drawables;
+    %tmp.15 = getv %tmp.14 :watchUp;
+    %tmp.16 = invoke %tmp.10 %tmp.11(%tmp.15);
+    putv self :watchup %tmp.16;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 12 4 ]
+    %tmp.17 = getm $.Toybox.WatchUi;
+    %tmp.18 = getv function %tmp.17 :loadResource;
+    %tmp.20 = getv ? :Rez;
+    %tmp.21 = getv %tmp.20 :Drawables;
+    %tmp.22 = getv %tmp.21 :watchDown;
+    %tmp.23 = invoke %tmp.17 %tmp.18(%tmp.22);
+    putv self :watchdown %tmp.23;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 13 4 ]
+    %tmp.24 = getm $.Toybox.WatchUi;
+    %tmp.25 = getv function %tmp.24 :loadResource;
+    %tmp.27 = getv ? :Rez;
+    %tmp.28 = getv %tmp.27 :Drawables;
+    %tmp.29 = getv %tmp.28 :watchFlat;
+    %tmp.30 = invoke %tmp.24 %tmp.25(%tmp.29);
+    putv self :watchflat %tmp.30;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 14 4 ]
+    %tmp.32 = getv ? :watchup;
+    %tmp.33 = getv function %tmp.32 :getWidth;
+    %tmp.34 = invoke %tmp.32 %tmp.33();
+    putv self :ww %tmp.34;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 15 4 ]
+    %tmp.36 = getv ? :watchup;
+    %tmp.37 = getv function %tmp.36 :getHeight;
+    %tmp.38 = invoke %tmp.36 %tmp.37();
+    putv self :wh %tmp.38;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 16 4 ]
+    %tmp.39 = getm $.Toybox.WatchUi;
+    %tmp.40 = getv function %tmp.39 :loadResource;
+    %tmp.42 = getv ? :Rez;
+    %tmp.43 = getv %tmp.42 :Drawables;
+    %tmp.44 = getv %tmp.43 :armTop;
+    %tmp.45 = invoke %tmp.39 %tmp.40(%tmp.44);
+    putv self :armtop %tmp.45;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 17 4 ]
+    %tmp.46 = getm $.Toybox.WatchUi;
+    %tmp.47 = getv function %tmp.46 :loadResource;
+    %tmp.49 = getv ? :Rez;
+    %tmp.50 = getv %tmp.49 :Drawables;
+    %tmp.51 = getv %tmp.50 :armBottom;
+    %tmp.52 = invoke %tmp.46 %tmp.47(%tmp.51);
+    putv self :armbot %tmp.52;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 18 4 ]
+    %tmp.53 = getm $.Toybox.WatchUi;
+    %tmp.54 = getv function %tmp.53 :loadResource;
+    %tmp.56 = getv ? :Rez;
+    %tmp.57 = getv %tmp.56 :Drawables;
+    %tmp.58 = getv %tmp.57 :armTopWatch;
+    %tmp.59 = invoke %tmp.53 %tmp.54(%tmp.58);
+    putv self :armtopwat %tmp.59;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 19 4 ]
+    %tmp.60 = getm $.Toybox.WatchUi;
+    %tmp.61 = getv function %tmp.60 :loadResource;
+    %tmp.63 = getv ? :Rez;
+    %tmp.64 = getv %tmp.63 :Drawables;
+    %tmp.65 = getv %tmp.64 :armBottomWatch;
+    %tmp.66 = invoke %tmp.60 %tmp.61(%tmp.65);
+    putv self :armbotwat %tmp.66;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 20 4 ]
+    %tmp.67 = getm $.Toybox.WatchUi;
+    %tmp.68 = getv function %tmp.67 :loadResource;
+    %tmp.70 = getv ? :Rez;
+    %tmp.71 = getv %tmp.70 :Drawables;
+    %tmp.72 = getv %tmp.71 :armHoleTopBack;
+    %tmp.73 = invoke %tmp.67 %tmp.68(%tmp.72);
+    putv self :armholetopback %tmp.73;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 21 4 ]
+    %tmp.74 = getm $.Toybox.WatchUi;
+    %tmp.75 = getv function %tmp.74 :loadResource;
+    %tmp.77 = getv ? :Rez;
+    %tmp.78 = getv %tmp.77 :Drawables;
+    %tmp.79 = getv %tmp.78 :armHoleTopFront;
+    %tmp.80 = invoke %tmp.74 %tmp.75(%tmp.79);
+    putv self :armholetopfront %tmp.80;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 22 4 ]
+    %tmp.81 = getm $.Toybox.WatchUi;
+    %tmp.82 = getv function %tmp.81 :loadResource;
+    %tmp.84 = getv ? :Rez;
+    %tmp.85 = getv %tmp.84 :Drawables;
+    %tmp.86 = getv %tmp.85 :armHoleBottomBack;
+    %tmp.87 = invoke %tmp.81 %tmp.82(%tmp.86);
+    putv self :armholebotback %tmp.87;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 23 4 ]
+    %tmp.88 = getm $.Toybox.WatchUi;
+    %tmp.89 = getv function %tmp.88 :loadResource;
+    %tmp.91 = getv ? :Rez;
+    %tmp.92 = getv %tmp.91 :Drawables;
+    %tmp.93 = getv %tmp.92 :armHoleBottomFront;
+    %tmp.94 = invoke %tmp.88 %tmp.89(%tmp.93);
+    putv self :armholebotfront %tmp.94;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 24 4 ]
+    %tmp.96 = getv ? :armtop;
+    %tmp.97 = getv function %tmp.96 :getWidth;
+    %tmp.98 = invoke %tmp.96 %tmp.97();
+    putv self :aw %tmp.98;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 25 4 ]
+    %tmp.100 = getv ? :armtop;
+    %tmp.101 = getv function %tmp.100 :getHeight;
+    %tmp.102 = invoke %tmp.100 %tmp.101();
+    putv self :ah %tmp.102;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 27 4 ]
+    %tmp.104 = getv ? :sh;
+    %tmp.105 = 85;
+    %tmp.106 = mul %tmp.104 %tmp.105;
+    %tmp.107 = 100;
+    %tmp.108 = div %tmp.106 %tmp.107;
+    putv self :iy %tmp.108;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 28 4 ]
+    %tmp.110 = getv ? :sw;
+    %tmp.111 = 3;
+    %tmp.112 = div %tmp.110 %tmp.111;
+    putv self :x %tmp.112;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 29 4 ]
+    %tmp.114 = getv ? :iy;
+    putv self :y %tmp.114;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 30 4 ]
+    %tmp.116 = getv ? :sh;
+    %tmp.117 = 7;
+    %tmp.118 = mul %tmp.116 %tmp.117;
+    %tmp.119 = 100;
+    %tmp.120 = div %tmp.118 %tmp.119;
+    putv self :dym %tmp.120;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 32 4 ]
+    %tmp.122 = getv ? :sh;
+    %tmp.123 = 30;
+    %tmp.124 = mul %tmp.122 %tmp.123;
+    %tmp.125 = 100;
+    %tmp.126 = div %tmp.124 %tmp.125;
+    putv self :minarmy %tmp.126;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 33 4 ]
+    %tmp.128 = getv ? :sh;
+    %tmp.129 = 60;
+    %tmp.130 = mul %tmp.128 %tmp.129;
+    %tmp.131 = 100;
+    %tmp.132 = div %tmp.130 %tmp.131;
+    putv self :maxarmy %tmp.132;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 34 4 ]
+    %tmp.134 = getv ? :sw;
+    %tmp.135 = 2;
+    %tmp.136 = mul %tmp.134 %tmp.135;
+    %tmp.137 = 100;
+    %tmp.138 = div %tmp.136 %tmp.137;
+    putv self :armdx %tmp.138;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 35 4 ]
+    %tmp.139 = newa 0;
+    putv self :arms %tmp.139;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 40 4 ]
+    %tmp.141 = getv ? :sw;
+    %tmp.142 = 15;
+    %tmp.143 = mul %tmp.141 %tmp.142;
+    %tmp.144 = 100;
+    %tmp.145 = div %tmp.143 %tmp.144;
+    putv self :scorex %tmp.145;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 41 4 ]
+    %tmp.147 = getv ? :sh;
+    %tmp.148 = 30;
+    %tmp.149 = mul %tmp.147 %tmp.148;
+    %tmp.150 = 100;
+    %tmp.151 = div %tmp.149 %tmp.150;
+    putv self :scorey %tmp.151;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 43 4 ]
+    %tmp.152 = newa 3;
+    %tmp.153 = 0;
+    %tmp.154 = dup %tmp.152;
+    %tmp.155 = aputv %tmp.154 0 %tmp.153;
+    %tmp.156 = 0;
+    %tmp.157 = dup %tmp.155;
+    %tmp.158 = aputv %tmp.157 1 %tmp.156;
+    %tmp.159 = 0;
+    %tmp.160 = dup %tmp.158;
+    %tmp.161 = aputv %tmp.160 2 %tmp.159;
+    putv self :highscores %tmp.161;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 44 4 ]
+    %tmp.163 = getv ? :sw;
+    %tmp.164 = 60;
+    %tmp.165 = mul %tmp.163 %tmp.164;
+    %tmp.166 = 100;
+    %tmp.167 = div %tmp.165 %tmp.166;
+    putv self :hscorex %tmp.167;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 45 4 ]
+    %tmp.169 = getv ? :scorey;
+    putv self :hscorey %tmp.169;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 47 4 ]
+    %tmp.171 = getv ? :sw;
+    %tmp.172 = 3;
+    %tmp.173 = div %tmp.171 %tmp.172;
+    putv self :startx %tmp.173;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 48 4 ]
+    %tmp.175 = getv ? :sw;
+    %tmp.176 = 60;
+    %tmp.177 = mul %tmp.175 %tmp.176;
+    %tmp.178 = 100;
+    %tmp.179 = div %tmp.177 %tmp.178;
+    putv self :starty %tmp.179;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 49 4 ]
+    %tmp.180 = -1;
+    %tmp.182 = getv ? :sw;
+    %tmp.183 = mul %tmp.180 %tmp.182;
+    %tmp.184 = 5;
+    %tmp.185 = mul %tmp.183 %tmp.184;
+    %tmp.186 = 100;
+    %tmp.187 = div %tmp.185 %tmp.186;
+    putv self :holeyt %tmp.187;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchView.mc" 50 4 ]
+    %tmp.189 = getv ? :sw;
+    %tmp.190 = 90;
+    %tmp.191 = mul %tmp.189 %tmp.190;
+    %tmp.192 = 100;
+    %tmp.193 = div %tmp.191 %tmp.192;
+    putv self :holeyb %tmp.193;
+}

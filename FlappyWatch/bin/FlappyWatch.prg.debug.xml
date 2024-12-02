@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<manifest filename="C:\Garmin\Projects\FlappyWatch\manifest.xml"/>
+<pcToLineNum>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="7" parent="globals" pc="268435460" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="8" parent="globals" pc="268435483" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="9" parent="globals" pc="268435505" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="11" parent="globals" pc="268435527" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="12" parent="globals" pc="268435570" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="13" parent="globals" pc="268435613" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="14" parent="globals" pc="268435656" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="15" parent="globals" pc="268435681" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="16" parent="globals" pc="268435706" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="17" parent="globals" pc="268435749" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="18" parent="globals" pc="268435792" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="19" parent="globals" pc="268435835" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="20" parent="globals" pc="268435878" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="21" parent="globals" pc="268435921" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="22" parent="globals" pc="268435964" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="23" parent="globals" pc="268436007" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="24" parent="globals" pc="268436050" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="25" parent="globals" pc="268436075" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="27" parent="globals" pc="268436100" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="28" parent="globals" pc="268436128" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="29" parent="globals" pc="268436150" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="30" parent="globals" pc="268436166" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="32" parent="globals" pc="268436194" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="33" parent="globals" pc="268436222" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="34" parent="globals" pc="268436250" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="35" parent="globals" pc="268436278" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="40" parent="globals" pc="268436292" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="41" parent="globals" pc="268436320" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="43" parent="globals" pc="268436348" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="44" parent="globals" pc="268436401" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="45" parent="globals" pc="268436429" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="47" parent="globals" pc="268436445" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="48" parent="globals" pc="268436467" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="49" parent="globals" pc="268436495" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="4" lineNum="50" parent="globals" pc="268436529" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="6" lineNum="7" parent="globals/Rez" pc="268436558" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="7" lineNum="52" parent="globals/FlappyWatchView" pc="268436582" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="9" lineNum="58" parent="globals/FlappyWatchView" pc="268436601" symbol="onLayout"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="9" lineNum="59" parent="globals/FlappyWatchView" pc="268436603" symbol="onLayout"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="9" lineNum="60" parent="globals/FlappyWatchView" pc="268436631" symbol="onLayout"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="9" lineNum="60" parent="globals/FlappyWatchView" pc="268436644" symbol="onLayout"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="9" lineNum="61" parent="globals/FlappyWatchView" pc="268436660" symbol="onLayout"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="9" lineNum="62" parent="globals/FlappyWatchView" pc="268436688" symbol="onLayout"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="9" lineNum="62" parent="globals/FlappyWatchView" pc="268436701" symbol="onLayout"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="72" parent="globals/FlappyWatchView" pc="268436758" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="74" parent="globals/FlappyWatchView" pc="268436762" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="75" parent="globals/FlappyWatchView" pc="268436837" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="76" parent="globals/FlappyWatchView" pc="268436871" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="78" parent="globals/FlappyWatchView" pc="268436915" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="79" parent="globals/FlappyWatchView" pc="268436937" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="81" parent="globals/FlappyWatchView" pc="268436949" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="82" parent="globals/FlappyWatchView" pc="268436971" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="83" parent="globals/FlappyWatchView" pc="268437021" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="85" parent="globals/FlappyWatchView" pc="268437086" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="86" parent="globals/FlappyWatchView" pc="268437108" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="87" parent="globals/FlappyWatchView" pc="268437128" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="88" parent="globals/FlappyWatchView" pc="268437144" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="91" parent="globals/FlappyWatchView" pc="268437160" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="92" parent="globals/FlappyWatchView" pc="268437212" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="94" parent="globals/FlappyWatchView" pc="268437231" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="95" parent="globals/FlappyWatchView" pc="268437242" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="97" parent="globals/FlappyWatchView" pc="268437323" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="98" parent="globals/FlappyWatchView" pc="268437361" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="100" parent="globals/FlappyWatchView" pc="268437395" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="101" parent="globals/FlappyWatchView" pc="268437451" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="103" parent="globals/FlappyWatchView" pc="268437555" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="104" parent="globals/FlappyWatchView" pc="268437559" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="105" parent="globals/FlappyWatchView" pc="268437589" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="106" parent="globals/FlappyWatchView" pc="268437626" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="107" parent="globals/FlappyWatchView" pc="268437654" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="108" parent="globals/FlappyWatchView" pc="268437664" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="109" parent="globals/FlappyWatchView" pc="268437674" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="110" parent="globals/FlappyWatchView" pc="268437705" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="111" parent="globals/FlappyWatchView" pc="268437724" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="112" parent="globals/FlappyWatchView" pc="268437743" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="113" parent="globals/FlappyWatchView" pc="268437781" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="114" parent="globals/FlappyWatchView" pc="268437785" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="115" parent="globals/FlappyWatchView" pc="268437795" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="124" parent="globals/FlappyWatchView" pc="268437874" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="125" parent="globals/FlappyWatchView" pc="268437884" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="126" parent="globals/FlappyWatchView" pc="268437902" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="127" parent="globals/FlappyWatchView" pc="268437936" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="128" parent="globals/FlappyWatchView" pc="268437965" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="130" parent="globals/FlappyWatchView" pc="268437978" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="134" parent="globals/FlappyWatchView" pc="268437994" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="135" parent="globals/FlappyWatchView" pc="268438054" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="136" parent="globals/FlappyWatchView" pc="268438114" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="137" parent="globals/FlappyWatchView" pc="268438162" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="138" parent="globals/FlappyWatchView" pc="268438210" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="139" parent="globals/FlappyWatchView" pc="268438270" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="141" parent="globals/FlappyWatchView" pc="268438343" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="142" parent="globals/FlappyWatchView" pc="268438363" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="143" parent="globals/FlappyWatchView" pc="268438382" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="146" parent="globals/FlappyWatchView" pc="268438395" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="147" parent="globals/FlappyWatchView" pc="268438417" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="148" parent="globals/FlappyWatchView" pc="268438428" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="149" parent="globals/FlappyWatchView" pc="268438474" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="151" parent="globals/FlappyWatchView" pc="268438517" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="150" parent="globals/FlappyWatchView" pc="268438517" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="151" parent="globals/FlappyWatchView" pc="268438534" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="152" parent="globals/FlappyWatchView" pc="268438544" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="152" parent="globals/FlappyWatchView" pc="268438561" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="153" parent="globals/FlappyWatchView" pc="268438571" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="154" parent="globals/FlappyWatchView" pc="268438578" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="156" parent="globals/FlappyWatchView" pc="268438645" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="159" parent="globals/FlappyWatchView" pc="268438691" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="160" parent="globals/FlappyWatchView" pc="268438702" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="161" parent="globals/FlappyWatchView" pc="268438716" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="162" parent="globals/FlappyWatchView" pc="268438726" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="163" parent="globals/FlappyWatchView" pc="268438745" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="166" parent="globals/FlappyWatchView" pc="268438780" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="166" parent="globals/FlappyWatchView" pc="268438797" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="167" parent="globals/FlappyWatchView" pc="268438828" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="167" parent="globals/FlappyWatchView" pc="268438888" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="168" parent="globals/FlappyWatchView" pc="268438904" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="168" parent="globals/FlappyWatchView" pc="268438921" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="169" parent="globals/FlappyWatchView" pc="268438952" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="169" parent="globals/FlappyWatchView" pc="268438972" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="171" parent="globals/FlappyWatchView" pc="268438991" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="172" parent="globals/FlappyWatchView" pc="268439008" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="173" parent="globals/FlappyWatchView" pc="268439044" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="174" parent="globals/FlappyWatchView" pc="268439063" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="175" parent="globals/FlappyWatchView" pc="268439080" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="177" parent="globals/FlappyWatchView" pc="268439108" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="178" parent="globals/FlappyWatchView" pc="268439128" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="179" parent="globals/FlappyWatchView" pc="268439197" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="180" parent="globals/FlappyWatchView" pc="268439234" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="181" parent="globals/FlappyWatchView" pc="268439303" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="182" parent="globals/FlappyWatchView" pc="268439320" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="12" lineNum="184" parent="globals/FlappyWatchView" pc="268439389" symbol="onUpdate"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="13" lineNum="189" parent="globals/FlappyWatchView" pc="268439456" symbol="onTimer"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchView.mc" id="13" lineNum="190" parent="globals/FlappyWatchView" pc="268439458" symbol="onTimer"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="14" lineNum="5" parent="globals/FlappyWatchDelegate" pc="268439475" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="15" lineNum="11" parent="globals/FlappyWatchDelegate" pc="268439494" symbol="onMenu"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="15" lineNum="12" parent="globals/FlappyWatchDelegate" pc="268439496" symbol="onMenu"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="15" lineNum="13" parent="globals/FlappyWatchDelegate" pc="268439581" symbol="onMenu"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="16" lineNum="7" parent="globals/FlappyWatchDelegate" pc="268439584" symbol="initialize"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="16" lineNum="8" parent="globals/FlappyWatchDelegate" pc="268439586" symbol="initialize"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="16" parent="globals/FlappyWatchDelegate" pc="268439605" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="17" parent="globals/FlappyWatchDelegate" pc="268439609" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="18" parent="globals/FlappyWatchDelegate" pc="268439620" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="19" parent="globals/FlappyWatchDelegate" pc="268439664" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="20" parent="globals/FlappyWatchDelegate" pc="268439677" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="21" parent="globals/FlappyWatchDelegate" pc="268439693" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="22" parent="globals/FlappyWatchDelegate" pc="268439706" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="23" parent="globals/FlappyWatchDelegate" pc="268439790" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="24" parent="globals/FlappyWatchDelegate" pc="268439800" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="25" parent="globals/FlappyWatchDelegate" pc="268439810" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="26" parent="globals/FlappyWatchDelegate" pc="268439823" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="27" parent="globals/FlappyWatchDelegate" pc="268439833" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="30" parent="globals/FlappyWatchDelegate" pc="268439855" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="31" parent="globals/FlappyWatchDelegate" pc="268439866" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="32" parent="globals/FlappyWatchDelegate" pc="268439879" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="33" parent="globals/FlappyWatchDelegate" pc="268439911" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="34" parent="globals/FlappyWatchDelegate" pc="268439939" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="35" parent="globals/FlappyWatchDelegate" pc="268439968" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="36" parent="globals/FlappyWatchDelegate" pc="268439984" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="39" parent="globals/FlappyWatchDelegate" pc="268439993" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="40" parent="globals/FlappyWatchDelegate" pc="268440003" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="40" parent="globals/FlappyWatchDelegate" pc="268440020" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="41" parent="globals/FlappyWatchDelegate" pc="268440036" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="42" parent="globals/FlappyWatchDelegate" pc="268440049" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="43" parent="globals/FlappyWatchDelegate" pc="268440089" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchDelegate.mc" id="17" lineNum="46" parent="globals/FlappyWatchDelegate" pc="268440108" symbol="onTap"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchApp.mc" id="18" lineNum="5" parent="globals/FlappyWatchApp" pc="268440111" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchApp.mc" id="19" lineNum="12" parent="globals/FlappyWatchApp" pc="268440130" symbol="onStart"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchApp.mc" id="20" lineNum="20" parent="globals/FlappyWatchApp" pc="268440133" symbol="getInitialView"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchApp.mc" id="20" lineNum="21" parent="globals/FlappyWatchApp" pc="268440135" symbol="getInitialView"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchApp.mc" id="21" lineNum="7" parent="globals/FlappyWatchApp" pc="268440210" symbol="initialize"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchApp.mc" id="21" lineNum="8" parent="globals/FlappyWatchApp" pc="268440212" symbol="initialize"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchApp.mc" id="22" lineNum="16" parent="globals/FlappyWatchApp" pc="268440231" symbol="onStop"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchApp.mc" id="23" lineNum="26" parent="globals" pc="268440234" symbol="getApp"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchApp.mc" id="23" lineNum="27" parent="globals" pc="268440244" symbol="getApp"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchMenuDelegate.mc" id="24" lineNum="5" parent="globals/FlappyWatchMenuDelegate" pc="268440260" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchMenuDelegate.mc" id="25" lineNum="11" parent="globals/FlappyWatchMenuDelegate" pc="268440279" symbol="onMenuItem"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchMenuDelegate.mc" id="25" lineNum="12" parent="globals/FlappyWatchMenuDelegate" pc="268440281" symbol="onMenuItem"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchMenuDelegate.mc" id="25" lineNum="13" parent="globals/FlappyWatchMenuDelegate" pc="268440292" symbol="onMenuItem"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchMenuDelegate.mc" id="25" lineNum="14" parent="globals/FlappyWatchMenuDelegate" pc="268440316" symbol="onMenuItem"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchMenuDelegate.mc" id="25" lineNum="15" parent="globals/FlappyWatchMenuDelegate" pc="268440327" symbol="onMenuItem"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchMenuDelegate.mc" id="26" lineNum="7" parent="globals/FlappyWatchMenuDelegate" pc="268440352" symbol="initialize"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\source\\FlappyWatchMenuDelegate.mc" id="26" lineNum="8" parent="globals/FlappyWatchMenuDelegate" pc="268440354" symbol="initialize"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="27" lineNum="31" parent="globals/Rez/Layouts" pc="268440373" symbol="MainLayout"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="27" lineNum="32" parent="globals/Rez/Layouts" pc="268440385" symbol="MainLayout"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="27" lineNum="34" parent="globals/Rez/Layouts" pc="268440516" symbol="MainLayout"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="27" lineNum="35" parent="globals/Rez/Layouts" pc="268440621" symbol="MainLayout"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="27" lineNum="37" parent="globals/Rez/Layouts" pc="268440661" symbol="MainLayout"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="28" lineNum="42" parent="globals/Rez/Menus/MainMenu" pc="268440688" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="29" lineNum="43" parent="globals/Rez/Menus/MainMenu" pc="268440707" symbol="initialize"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="29" lineNum="44" parent="globals/Rez/Menus/MainMenu" pc="268440709" symbol="initialize"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="29" lineNum="45" parent="globals/Rez/Menus/MainMenu" pc="268440727" symbol="initialize"/>
+<entry filename="C:\\Garmin\\Projects\\FlappyWatch\\bin\\gen\\006-B4260-00\\source\\Rez.mcgen" id="29" lineNum="46" parent="globals/Rez/Menus/MainMenu" pc="268440783" symbol="initialize"/>
+</pcToLineNum>
+<symbolTable>
+<entry field="true" id="18" symbol="armholebotfront"/>
+<entry id="10" object="true" symbol="FlappyWatchDelegate"/>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry field="true" id="17" symbol="armholebotback"/>
+<entry field="true" id="31" symbol="highscores"/>
+<entry id="8389346" symbol="text"/>
+<entry field="true" id="25" symbol="checking"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+<entry id="9" object="true" symbol="FlappyWatchApp"/>
+<entry field="true" id="30" symbol="flapping"/>
+<entry id="7" module="true" symbol="globals/Rez/Menus"/>
+<entry field="true" id="26" symbol="diff"/>
+<entry field="true" id="60" symbol="armBottomWatch"/>
+<entry id="71" method="true" symbol="MainLayout"/>
+<entry field="true" id="49" symbol="timer"/>
+<entry field="true" id="50" symbol="watchdown"/>
+<entry field="true" id="61" symbol="armHoleBottomBack"/>
+<entry id="8390424" module="true" symbol="Storage"/>
+<entry field="true" id="42" symbol="score"/>
+<entry field="true" id="69" symbol="watchFlat"/>
+<entry field="true" id="40" symbol="minarmy"/>
+<entry field="true" id="32" symbol="hit"/>
+<entry field="true" id="21" symbol="arms"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry field="true" id="73" symbol="AppName"/>
+<entry id="8" module="true" symbol="globals/Rez/Strings"/>
+<entry field="true" id="19" symbol="armholetopback"/>
+<entry id="8389080" method="true" symbol="onMenu"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="8389345" symbol="rezId"/>
+<entry field="true" id="68" symbol="watchDown"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry field="true" id="44" symbol="scorey"/>
+<entry field="true" id="43" symbol="scorex"/>
+<entry field="true" id="59" symbol="armBottom"/>
+<entry id="2" module="true" symbol="globals/Rez"/>
+<entry field="true" id="76" symbol="prompt"/>
+<entry field="true" id="67" symbol="id_monkey"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry field="true" id="54" symbol="ww"/>
+<entry field="true" id="53" symbol="wh"/>
+<entry field="true" id="48" symbol="sw"/>
+<entry field="true" id="47" symbol="starty"/>
+<entry field="true" id="46" symbol="startx"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry field="true" id="45" symbol="sh"/>
+<entry id="8389348" symbol="font"/>
+<entry id="78" symbol="item_2"/>
+<entry id="77" symbol="item_1"/>
+<entry id="56" module="true" symbol="Menus"/>
+<entry id="8389275" method="true" symbol="getApp"/>
+<entry field="true" id="39" symbol="maxarmy"/>
+<entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry field="true" id="38" symbol="iy"/>
+<entry field="true" id="20" symbol="armholetopfront"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry id="8389349" symbol="justification"/>
+<entry id="8389098" method="true" symbol="onTap"/>
+<entry field="true" id="28" symbol="dy"/>
+<entry field="true" id="27" symbol="ds"/>
+<entry field="true" id="24" symbol="aw"/>
+<entry field="true" id="13" symbol="ah"/>
+<entry id="5" module="true" symbol="globals/Rez/JsonData"/>
+<entry field="true" id="14" symbol="armbot"/>
+<entry field="true" id="41" symbol="newgame"/>
+<entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="72" object="true" symbol="MainMenu"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry field="true" id="52" symbol="watchup"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry id="12" object="true" symbol="FlappyWatchView"/>
+<entry field="true" id="58" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry field="true" id="35" symbol="holeyt"/>
+<entry field="true" id="15" symbol="armbotwat"/>
+<entry field="true" id="22" symbol="armtop"/>
+<entry field="true" id="34" symbol="holeyb"/>
+<entry field="true" id="65" symbol="armTop"/>
+<entry field="true" id="62" symbol="armHoleBottomFront"/>
+<entry field="true" id="29" symbol="dym"/>
+<entry field="true" id="66" symbol="armTopWatch"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry field="true" id="64" symbol="armHoleTopFront"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry field="true" id="70" symbol="watchUp"/>
+<entry id="8389109" method="true" symbol="onMenuItem"/>
+<entry id="8389347" symbol="color"/>
+<entry field="true" id="16" symbol="armdx"/>
+<entry field="true" id="33" symbol="hittime"/>
+<entry id="8388646" module="true" object="true" symbol="Timer"/>
+<entry id="55" module="true" symbol="Layouts"/>
+<entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry field="true" id="37" symbol="hscorey"/>
+<entry field="true" id="63" symbol="armHoleTopBack"/>
+<entry field="true" id="36" symbol="hscorex"/>
+<entry id="8388635" module="true" symbol="Application"/>
+<entry id="57" method="true" symbol="onTimer"/>
+<entry field="true" id="8390079" symbol="y"/>
+<entry field="true" id="8390078" symbol="x"/>
+<entry field="true" id="51" symbol="watchflat"/>
+<entry field="true" id="23" symbol="armtopwat"/>
+<entry field="true" id="75" symbol="menu_label_2"/>
+<entry field="true" id="74" symbol="menu_label_1"/>
+<entry id="11" object="true" symbol="FlappyWatchMenuDelegate"/>
+</symbolTable>
+<localVars>
+<entry arg="true" endPc="268436757" name="dc" stackId="1" startPc="268436601"/>
+<entry arg="true" endPc="268439455" name="dc" stackId="1" startPc="268436758"/>
+<entry endPc="268439454" name="gap" stackId="2" startPc="268436762"/>
+<entry endPc="268439454" name="highscore" stackId="3" startPc="268436762"/>
+<entry endPc="268439454" name="inrange" stackId="4" startPc="268436762"/>
+<entry endPc="268438342" name="i" stackId="5" startPc="268437589"/>
+<entry endPc="268438329" name="topy" stackId="6" startPc="268437589"/>
+<entry endPc="268438329" name="boty" stackId="7" startPc="268437589"/>
+<entry endPc="268438329" name="topimg" stackId="8" startPc="268437589"/>
+<entry endPc="268438329" name="botimg" stackId="9" startPc="268437589"/>
+<entry endPc="268438329" name="armx" stackId="10" startPc="268437589"/>
+<entry endPc="268438329" name="army" stackId="11" startPc="268437589"/>
+<entry endPc="268438641" name="tmp" stackId="12" startPc="268438428"/>
+<entry arg="true" endPc="268440110" name="clickEvent" stackId="1" startPc="268439605"/>
+<entry endPc="268439989" name="xy" stackId="2" startPc="268439866"/>
+<entry arg="true" endPc="268440351" name="item" stackId="1" startPc="268440279"/>
+<entry arg="true" endPc="268440687" name="dc" stackId="1" startPc="268440373"/>
+<entry endPc="268440687" name="rez_cmp_local_text_1491315207" stackId="2" startPc="268440385"/>
+<entry endPc="268440687" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268440385"/>
+</localVars>
+<annotations>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="armBottomWatch"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="armBottom"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="armTop"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="armHoleTopBack"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="armHoleBottomBack"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="armHoleBottomFront"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="armHoleTopFront"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="watchDown"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_2"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="armTopWatch"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="watchFlat"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="menu_label_1"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="prompt"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="watchUp"/>
+<annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="id_monkey"/>
+</annotations>
+<dataEntryOffsetMappings>
+<dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+<dataEntry label="globals/Rez" offset="859" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/FlappyWatchView" offset="938" parentId="globals" symbolId="FlappyWatchView" type="class"/>
+<dataEntry label="globals/FlappyWatchDelegate" offset="1025" parentId="globals" symbolId="FlappyWatchDelegate" type="class"/>
+<dataEntry label="globals/FlappyWatchApp" offset="1088" parentId="globals" symbolId="FlappyWatchApp" type="class"/>
+<dataEntry label="globals/FlappyWatchMenuDelegate" offset="1159" parentId="globals" symbolId="FlappyWatchMenuDelegate" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="1214" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="1349" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="1388" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="1427" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="1458" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="1521" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry label="globals/Rez/Menus/MainMenu" offset="1552" parentId="Menus" symbolId="MainMenu" type="class"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" endPc="268436581" name="&lt;init&gt;" parent="Rez" startPc="268436558">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436600" name="&lt;init&gt;" parent="FlappyWatchView" startPc="268436582">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onShow" parent="FlappyWatchView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268436757" name="onLayout" parent="FlappyWatchView" startPc="268436601">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="FlappyWatchView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onHide" parent="FlappyWatchView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439455" name="onUpdate" parent="FlappyWatchView" startPc="268436758">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439474" name="onTimer" parent="FlappyWatchView" startPc="268439456">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439493" name="&lt;init&gt;" parent="FlappyWatchDelegate" startPc="268439475">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439583" name="onMenu" parent="FlappyWatchDelegate" startPc="268439494">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268439604" name="initialize" parent="FlappyWatchDelegate" startPc="268439584">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440110" name="onTap" parent="FlappyWatchDelegate" startPc="268439605">
+<param id="clickEvent"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440129" name="&lt;init&gt;" parent="FlappyWatchApp" startPc="268440111">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440132" name="onStart" parent="FlappyWatchApp" startPc="268440130">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440209" name="getInitialView" parent="FlappyWatchApp" startPc="268440133">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440230" name="initialize" parent="FlappyWatchApp" startPc="268440210">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440233" name="onStop" parent="FlappyWatchApp" startPc="268440231">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440259" name="getApp" startPc="268440234">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440278" name="&lt;init&gt;" parent="FlappyWatchMenuDelegate" startPc="268440260">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440351" name="onMenuItem" parent="FlappyWatchMenuDelegate" startPc="268440279">
+<param id="item"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440372" name="initialize" parent="FlappyWatchMenuDelegate" startPc="268440352">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440687" name="MainLayout" parent="Layouts" startPc="268440373">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440706" name="&lt;init&gt;" parent="MainMenu" startPc="268440688">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268440839" name="initialize" parent="MainMenu" startPc="268440707">
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>
