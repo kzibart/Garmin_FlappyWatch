@@ -1,0 +1,230 @@
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc"; @line = 3; ]
+import Toybox.Application.Storage;
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc"; @line = 5; ]
+class FlappyWatchDelegate extends WatchUi.BehaviorDelegate{
+    [ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc"; @line = 7; ]
+    function initialize() as Void {
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_7_26_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 8 8 ]
+        %tmp.2 = getv ? :BehaviorDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_7_26_stop:
+    }
+    [ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc"; @line = 11; ]
+    function onMenu() as Boolean {
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_11_33_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 12 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :pushView;
+        %tmp.6 = getv ? :Rez;
+        %tmp.7 = getv %tmp.6 :Menus;
+        %tmp.8 = getv function ? %tmp.7 :MainMenu;
+        %tmp.3 = newc %tmp.8 ();
+        %tmp.12 = getv ? :FlappyWatchMenuDelegate;
+        %tmp.9 = newc %tmp.12 ();
+        %tmp.13 = getm $.Toybox.WatchUi;
+        %tmp.14 = getv %tmp.13 :SLIDE_UP;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.9, %tmp.14);
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 13 8 ]
+        %tmp.15 = true;
+        ret %tmp.15;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_11_33_stop:
+    }
+    [ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc"; @line = 16; ]
+    function onTap(clickEvent) as Boolean {
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_16_42_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 17 8 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_17_8_if_stmt:
+        %tmp.2 = getv ? :hit;
+        bf %tmp.2 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_17_8_if_false;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_17_8_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_17_17_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 18 12 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_18_12_if_stmt:
+        %tmp.4 = getv ? :Time;
+        %tmp.5 = getv function %tmp.4 :now;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        %tmp.7 = getv function %tmp.6 :value;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.10 = getv ? :hittime;
+        %tmp.11 = sub %tmp.8 %tmp.10;
+        %tmp.12 = 0;
+        %tmp.13 = gt %tmp.11 %tmp.12;
+        bf %tmp.13 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_18_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_18_12_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_18_50_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 19 16 ]
+        %tmp.14 = 0.0;
+        putv self :dy %tmp.14;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 20 16 ]
+        %tmp.16 = getv ? :iy;
+        putv self :y %tmp.16;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 21 16 ]
+        %tmp.17 = 0;
+        putv self :flapping %tmp.17;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 22 16 ]
+        %tmp.18 = newa 1;
+        %tmp.19 = newa 2;
+        %tmp.21 = getv ? :sw;
+        %tmp.23 = getv ? :aw;
+        %tmp.24 = add %tmp.21 %tmp.23;
+        %tmp.25 = dup %tmp.19;
+        %tmp.26 = aputv %tmp.25 0 %tmp.24;
+        %tmp.28 = getv ? :minarmy;
+        %tmp.30 = getv ? :maxarmy;
+        %tmp.31 = add %tmp.28 %tmp.30;
+        %tmp.32 = 2;
+        %tmp.33 = div %tmp.31 %tmp.32;
+        %tmp.34 = dup %tmp.26;
+        %tmp.35 = aputv %tmp.34 1 %tmp.33;
+        %tmp.36 = dup %tmp.18;
+        %tmp.37 = aputv %tmp.36 0 %tmp.35;
+        putv self :arms %tmp.37;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 23 16 ]
+        %tmp.38 = false;
+        putv self :hit %tmp.38;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 24 16 ]
+        %tmp.39 = false;
+        putv self :checking %tmp.39;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 25 16 ]
+        %tmp.40 = 0;
+        putv self :score %tmp.40;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 26 16 ]
+        %tmp.41 = true;
+        putv self :newgame %tmp.41;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 27 16 ]
+        %tmp.42 = getm $.Toybox.WatchUi;
+        %tmp.43 = getv function %tmp.42 :requestUpdate;
+        invoke %tmp.42 %tmp.43();
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_18_50_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_18_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_18_12_if_end:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_17_17_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_17_8_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_17_8_if_false:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_29_15_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 30 12 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_30_12_if_stmt:
+        %tmp.45 = getv ? :newgame;
+        bf %tmp.45 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_30_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_30_12_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_30_25_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 31 16 ]
+        [ "C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_30_25_start" "C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_30_25_stop" ]
+        %xy.1 = local;
+        %tmp.46 = lgetv %clickEvent;
+        %tmp.47 = getv function %tmp.46 :getCoordinates;
+        %tmp.48 = invoke %tmp.46 %tmp.47();
+        lputv %xy.1 %tmp.48;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 32 16 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_32_16_if_stmt:
+        %tmp.50 = lgetv %xy.1;
+        %tmp.51 = 0;
+        %tmp.52 = agetv %tmp.50 %tmp.51;
+        %tmp.54 = getv ? :sw;
+        %tmp.55 = 60;
+        %tmp.56 = mul %tmp.54 %tmp.55;
+        %tmp.57 = 100;
+        %tmp.58 = div %tmp.56 %tmp.57;
+        %tmp.59 = gt %tmp.52 %tmp.58;
+        bf %tmp.59 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_32_16_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_32_16_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_32_39_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 33 20 ]
+        %tmp.61 = getv ? :diff;
+        %tmp.62 = 1;
+        %tmp.63 = add %tmp.61 %tmp.62;
+        %tmp.64 = 3;
+        %tmp.65 = mod %tmp.63 %tmp.64;
+        putv self :diff %tmp.65;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 34 20 ]
+        %tmp.66 = getm $.Toybox.Application.Storage;
+        %tmp.67 = getv function %tmp.66 :setValue;
+        %tmp.68 = "diff";
+        %tmp.70 = getv ? :diff;
+        invoke %tmp.66 %tmp.67(%tmp.68, %tmp.70);
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 35 20 ]
+        %tmp.71 = getm $.Toybox.WatchUi;
+        %tmp.72 = getv function %tmp.71 :requestUpdate;
+        invoke %tmp.71 %tmp.72();
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 36 20 ]
+        %tmp.73 = false;
+        ret %tmp.73;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_32_39_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_32_16_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_32_16_if_end:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_30_25_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_30_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_30_12_if_end:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 39 12 ]
+        %tmp.74 = false;
+        putv self :newgame %tmp.74;
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 40 12 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_40_12_if_stmt:
+        %tmp.76 = getv ? :dy;
+        %tmp.77 = 0;
+        %tmp.78 = gte %tmp.76 %tmp.77;
+        bf %tmp.78 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_40_12_if_false;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_40_12_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_40_25_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 40 27 ]
+        %tmp.79 = 1;
+        putv self :flapping %tmp.79;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_40_25_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_40_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_40_12_if_false:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_41_17_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 41 19 ]
+        %tmp.80 = 3;
+        putv self :flapping %tmp.80;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_41_17_stop:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_40_12_if_end:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 42 12 ]
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_42_12_if_stmt:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_42_16_begin:
+        %tmp.82 = getv ? :y;
+        %tmp.84 = getv ? :iy;
+        %tmp.85 = eq %tmp.82 %tmp.84;
+        %tmp.86 = dup %tmp.85;
+        bf %tmp.86 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_42_28_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_42_28_true:
+        %tmp.88 = getv ? :dy;
+        %tmp.89 = 0;
+        %tmp.90 = eq %tmp.88 %tmp.89;
+        %tmp.91 = and %tmp.85 %tmp.90;
+        push %tmp.91;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_42_28_end:
+        %tmp.92 = phi [%tmp.86 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_42_16_begin] [%tmp.91 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_42_28_true] [%tmp.92 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_42_28_end];
+        bf %tmp.92 @C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_42_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_42_12_if_true:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_42_37_start:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 43 16 ]
+        %tmp.93 = getm $.Toybox.WatchUi;
+        %tmp.94 = getv function %tmp.93 :requestUpdate;
+        invoke %tmp.93 %tmp.94();
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_42_37_stop:
+        goto @C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_42_12_if_end;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_42_12_if_end:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_29_15_stop:
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_17_8_if_end:
+[ "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc" 46 8 ]
+        %tmp.95 = false;
+        ret %tmp.95;
+C_Garmin_Projects_FlappyWatch_source_FlappyWatchDelegate_mc_16_42_stop:
+    }
+}
+[ @file = "C:\Garmin\Projects\FlappyWatch\source\FlappyWatchDelegate.mc"; @line = 1; ]
+<init> {
+}

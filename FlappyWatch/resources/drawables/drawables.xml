@@ -1,0 +1,14 @@
+<drawables>
+    <bitmap id="LauncherIcon" filename="launcher_icon.png" />
+    <bitmap id="watchUp" filename="Watch Up.png" packingFormat="png" scaleX="10%" scaleRelativeTo="Screen" />
+    <bitmap id="watchDown" filename="Watch Down.png" packingFormat="png" scaleX="10%" scaleRelativeTo="Screen" />
+    <bitmap id="watchFlat" filename="Watch Flat.png" packingFormat="png" scaleX="10%" scaleRelativeTo="Screen" />
+    <bitmap id="armTop" filename="Arm Top.png" packingFormat="png" scaleX="15%" scaleRelativeTo="Screen" />
+    <bitmap id="armBottom" filename="Arm Bottom.png" packingFormat="png" scaleX="15%" scaleRelativeTo="Screen" />
+    <bitmap id="armTopWatch" filename="Arm Top Watch.png" packingFormat="png" scaleX="15%" scaleRelativeTo="Screen" />
+    <bitmap id="armBottomWatch" filename="Arm Bottom Watch.png" packingFormat="png" scaleX="15%" scaleRelativeTo="Screen" />
+    <bitmap id="armHoleTopBack" filename="Arm Hole Top Back.png" packingFormat="png" scaleX="15%" scaleRelativeTo="Screen" dithering="none" />
+    <bitmap id="armHoleTopFront" filename="Arm Hole Top Front.png" packingFormat="png" scaleX="15%" scaleRelativeTo="Screen" dithering="none" />
+    <bitmap id="armHoleBottomBack" filename="Arm Hole Bottom Back.png" packingFormat="png" scaleX="15%" scaleRelativeTo="Screen" dithering="none" />
+    <bitmap id="armHoleBottomFront" filename="Arm Hole Bottom Front.png" packingFormat="png" scaleX="15%" scaleRelativeTo="Screen" dithering="none" />
+</drawables>

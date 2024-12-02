@@ -1,0 +1,1714 @@
+[ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 2; ]
+using Toybox.WatchUi;
+[ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 3; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 4; ]
+using Toybox.Graphics;
+[ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 5; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 7; ]
+module Rez {
+    [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 8; ]
+    module Drawables {
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        var watchUp as Symbol;
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 10; @position = 27; initialized = true; ]
+        var watchDown as Symbol;
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 11; @position = 27; initialized = true; ]
+        var watchFlat as Symbol;
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 12; @position = 27; initialized = true; ]
+        var armTop as Symbol;
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 13; @position = 27; initialized = true; ]
+        var armBottom as Symbol;
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 14; @position = 27; initialized = true; ]
+        var armTopWatch as Symbol;
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 15; @position = 27; initialized = true; ]
+        var armBottomWatch as Symbol;
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 16; @position = 27; initialized = true; ]
+        var armHoleTopBack as Symbol;
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 17; @position = 27; initialized = true; ]
+        var armHoleTopFront as Symbol;
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 18; @position = 27; initialized = true; ]
+        var armHoleBottomBack as Symbol;
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 19; @position = 27; initialized = true; ]
+        var armHoleBottomFront as Symbol;
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 20; @position = 27; initialized = true; ]
+        var id_monkey as Symbol;
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 21; @position = 27; initialized = true; ]
+        var LauncherIcon as Symbol;
+    }
+    [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 24; ]
+    module Fonts {
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 24; ]
+        <init> {
+        }
+    }
+    [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 27; ]
+    module JsonData {
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 27; ]
+        <init> {
+        }
+    }
+    [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 30; ]
+    module Layouts {
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 30; ]
+        <init> {
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 31; ]
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+c_Garmin_Projects_FlappyWatch_gen_006_B4260_00_source_Rez_mcgen_31_74_start:
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 32 12 ]
+            [ "c_Garmin_Projects_FlappyWatch_gen_006_B4260_00_source_Rez_mcgen_31_74_start" "c_Garmin_Projects_FlappyWatch_gen_006_B4260_00_source_Rez_mcgen_31_74_stop" ]
+            %rez_cmp_local_text_5941087521.1 = local;
+            %tmp.3 = getm $.Toybox.WatchUi;
+            %tmp.4 = getv function ? %tmp.3 :Text;
+            %tmp.5 = newd 6;
+            %tmp.7 = const :color;
+            %tmp.8 = getm $.Toybox.Graphics;
+            %tmp.9 = getv %tmp.8 :COLOR_WHITE;
+            %tmp.10 = dup %tmp.5;
+            %tmp.11 = aputv %tmp.10 %tmp.7 %tmp.9;
+            %tmp.13 = const :locX;
+            %tmp.14 = 454;
+            %tmp.15 = 0.5;
+            %tmp.16 = mul %tmp.14 %tmp.15;
+            %tmp.17 = dup %tmp.11;
+            %tmp.18 = aputv %tmp.17 %tmp.13 %tmp.16;
+            %tmp.20 = const :locY;
+            %tmp.21 = 5;
+            %tmp.22 = dup %tmp.18;
+            %tmp.23 = aputv %tmp.22 %tmp.20 %tmp.21;
+            %tmp.25 = const :text;
+            %tmp.26 = getm $;
+            %tmp.27 = getv %tmp.26 :Rez;
+            %tmp.28 = getv %tmp.27 :Strings;
+            %tmp.29 = getv %tmp.28 :prompt;
+            %tmp.30 = dup %tmp.23;
+            %tmp.31 = aputv %tmp.30 %tmp.25 %tmp.29;
+            %tmp.33 = const :justification;
+            %tmp.34 = getm $.Toybox.Graphics;
+            %tmp.35 = getv %tmp.34 :TEXT_JUSTIFY_CENTER;
+            %tmp.36 = dup %tmp.31;
+            %tmp.37 = aputv %tmp.36 %tmp.33 %tmp.35;
+            %tmp.39 = const :font;
+            %tmp.40 = getm $.Toybox.Graphics;
+            %tmp.41 = getv %tmp.40 :FONT_MEDIUM;
+            %tmp.42 = dup %tmp.37;
+            %tmp.43 = aputv %tmp.42 %tmp.39 %tmp.41;
+            %tmp.1 = newc %tmp.4 (%tmp.43);
+            lputv %rez_cmp_local_text_5941087521.1 %tmp.1;
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 34 12 ]
+            [ "c_Garmin_Projects_FlappyWatch_gen_006_B4260_00_source_Rez_mcgen_31_74_start" "c_Garmin_Projects_FlappyWatch_gen_006_B4260_00_source_Rez_mcgen_31_74_stop" ]
+            %rez_cmp_local_bitmap_id_monkey.2 = local;
+            %tmp.46 = getm $.Toybox.WatchUi;
+            %tmp.47 = getv function ? %tmp.46 :Bitmap;
+            %tmp.48 = newd 4;
+            %tmp.50 = const :identifier;
+            %tmp.51 = "id_monkey";
+            %tmp.52 = dup %tmp.48;
+            %tmp.53 = aputv %tmp.52 %tmp.50 %tmp.51;
+            %tmp.55 = const :rezId;
+            %tmp.56 = getm $;
+            %tmp.57 = getv %tmp.56 :Rez;
+            %tmp.58 = getv %tmp.57 :Drawables;
+            %tmp.59 = getv %tmp.58 :id_monkey;
+            %tmp.60 = dup %tmp.53;
+            %tmp.61 = aputv %tmp.60 %tmp.55 %tmp.59;
+            %tmp.63 = const :locX;
+            %tmp.64 = getm $.Toybox.WatchUi;
+            %tmp.65 = getv %tmp.64 :LAYOUT_HALIGN_CENTER;
+            %tmp.66 = dup %tmp.61;
+            %tmp.67 = aputv %tmp.66 %tmp.63 %tmp.65;
+            %tmp.69 = const :locY;
+            %tmp.70 = 30;
+            %tmp.71 = dup %tmp.67;
+            %tmp.72 = aputv %tmp.71 %tmp.69 %tmp.70;
+            %tmp.44 = newc %tmp.47 (%tmp.72);
+            lputv %rez_cmp_local_bitmap_id_monkey.2 %tmp.44;
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 35 12 ]
+            %tmp.73 = lgetv %rez_cmp_local_bitmap_id_monkey.2;
+            %tmp.74 = getv function %tmp.73 :setLocation;
+            %tmp.75 = 454;
+            %tmp.76 = lgetv %rez_cmp_local_bitmap_id_monkey.2;
+            %tmp.77 = getv %tmp.76 :width;
+            %tmp.78 = sub %tmp.75 %tmp.77;
+            %tmp.79 = 0.5;
+            %tmp.80 = mul %tmp.78 %tmp.79;
+            %tmp.81 = lgetv %rez_cmp_local_bitmap_id_monkey.2;
+            %tmp.82 = getv %tmp.81 :locY;
+            invoke %tmp.73 %tmp.74(%tmp.80, %tmp.82);
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 37 12 ]
+            %tmp.83 = newa Array<WatchUi.Drawable> 2;
+            %tmp.85 = lgetv %rez_cmp_local_text_5941087521.1;
+            %tmp.86 = dup %tmp.83;
+            %tmp.87 = aputv %tmp.86 0 %tmp.85;
+            %tmp.89 = lgetv %rez_cmp_local_bitmap_id_monkey.2;
+            %tmp.90 = dup %tmp.87;
+            %tmp.91 = aputv %tmp.90 1 %tmp.89;
+            ret %tmp.91;
+c_Garmin_Projects_FlappyWatch_gen_006_B4260_00_source_Rez_mcgen_31_74_stop:
+        }
+    }
+    [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 41; ]
+    module Menus {
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 41; ]
+        <init> {
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 42; ]
+        class MainMenu extends WatchUi.Menu{
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 42; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 42; ]
+            static
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 43; ]
+            function initialize() as Void {
+c_Garmin_Projects_FlappyWatch_gen_006_B4260_00_source_Rez_mcgen_43_34_start:
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 44 16 ]
+                %tmp.2 = getv ? :Menu;
+                %tmp.3 = getv function %tmp.2 :initialize;
+                invoke %tmp.2 %tmp.3();
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 45 16 ]
+                %tmp.4 = self;
+                %tmp.5 = getv function %tmp.4 :addItem;
+                %tmp.6 = getm $.Toybox.WatchUi;
+                %tmp.7 = getv function %tmp.6 :loadResource;
+                %tmp.8 = getm $;
+                %tmp.9 = getv %tmp.8 :Rez;
+                %tmp.10 = getv %tmp.9 :Strings;
+                %tmp.11 = getv %tmp.10 :menu_label_1;
+                %tmp.12 = invoke %tmp.6 %tmp.7(%tmp.11);
+                %tmp.13 = as %tmp.12 String;
+                %tmp.15 = const :item_1;
+                invoke %tmp.4 %tmp.5(%tmp.13, %tmp.15);
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 46 16 ]
+                %tmp.16 = self;
+                %tmp.17 = getv function %tmp.16 :addItem;
+                %tmp.18 = getm $.Toybox.WatchUi;
+                %tmp.19 = getv function %tmp.18 :loadResource;
+                %tmp.20 = getm $;
+                %tmp.21 = getv %tmp.20 :Rez;
+                %tmp.22 = getv %tmp.21 :Strings;
+                %tmp.23 = getv %tmp.22 :menu_label_2;
+                %tmp.24 = invoke %tmp.18 %tmp.19(%tmp.23);
+                %tmp.25 = as %tmp.24 String;
+                %tmp.27 = const :item_2;
+                invoke %tmp.16 %tmp.17(%tmp.25, %tmp.27);
+c_Garmin_Projects_FlappyWatch_gen_006_B4260_00_source_Rez_mcgen_43_34_stop:
+            }
+        }
+    }
+    [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 51; ]
+    module Strings {
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 51; ]
+        <init> {
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 52; @position = 27; initialized = true; ]
+        var menu_label_1 as Symbol;
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 53; @position = 27; initialized = true; ]
+        var menu_label_2 as Symbol;
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 54; @position = 27; initialized = true; ]
+        var prompt as Symbol;
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 55; @position = 27; initialized = true; ]
+        var AppName as Symbol;
+    }
+    [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 58; ]
+    module Styles {
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 58; ]
+        <init> {
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 59; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 59; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 60 18 ]
+                %tmp.28 = getm $.Toybox.Graphics;
+                %tmp.29 = getv %tmp.28 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.29;
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 61 18 ]
+                %tmp.30 = getm $.Toybox.Graphics;
+                %tmp.31 = getv %tmp.30 :FONT_SMALL;
+                putv self :font %tmp.31;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 60; @position = 18; ]
+            const justification;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 61; @position = 18; ]
+            const font;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 64; ]
+        module system_size__menu_header {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 64; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 65; @position = 18; ]
+            const width as Number = 454;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 66; @position = 18; ]
+            const height as Number = 105;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 69; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 69; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 70; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 73; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 73; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 74 18 ]
+                %tmp.32 = getm $.Toybox.Graphics;
+                %tmp.33 = getv %tmp.32 :TEXT_JUSTIFY_CENTER;
+                %tmp.34 = getm $.Toybox.Graphics;
+                %tmp.35 = getv %tmp.34 :TEXT_JUSTIFY_VCENTER;
+                %tmp.36 = bitor %tmp.33 %tmp.35;
+                putv self :justification %tmp.36;
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 75 18 ]
+                %tmp.37 = getm $.Toybox.Graphics;
+                %tmp.38 = getv %tmp.37 :FONT_SMALL;
+                putv self :font %tmp.38;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 74; @position = 18; ]
+            const justification;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 75; @position = 18; ]
+            const font;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 78; ]
+        module prompt_loc__body_no_title {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 78; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 79; @position = 18; ]
+            const x as Number = 45;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 80; @position = 18; ]
+            const y as Number = 68;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 83; ]
+        module system_icon_dark__about {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 83; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 84; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__about.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 85; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 86; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 87; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 88; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 91; ]
+        module system_icon_light__question {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 91; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 92; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__question.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 93; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 94; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 95; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 96; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 99; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 99; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 100; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 103; ]
+        module prompt_font__title {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 103; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 104 18 ]
+                %tmp.39 = getm $.Toybox.Graphics;
+                %tmp.40 = getv %tmp.39 :TEXT_JUSTIFY_CENTER;
+                %tmp.41 = getm $.Toybox.Graphics;
+                %tmp.42 = getv %tmp.41 :TEXT_JUSTIFY_VCENTER;
+                %tmp.43 = bitor %tmp.40 %tmp.42;
+                putv self :justification %tmp.43;
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 105 18 ]
+                %tmp.44 = getm $.Toybox.Graphics;
+                %tmp.45 = getv %tmp.44 :FONT_XTINY;
+                putv self :font %tmp.45;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 104; @position = 18; ]
+            const justification;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 105; @position = 18; ]
+            const font;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 108; ]
+        module system_icon_dark__discard {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 108; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 109; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__discard.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 110; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 111; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 112; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 113; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 116; ]
+        module system_size__menu_item {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 116; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 117; @position = 18; ]
+            const width as Number = 454;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 118; @position = 18; ]
+            const height as Number = 116;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 121; ]
+        module system_color_dark__text {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 121; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 123 18 ]
+                %tmp.46 = getm $.Toybox.Graphics;
+                %tmp.47 = getv %tmp.46 :COLOR_TRANSPARENT;
+                putv self :background %tmp.47;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 122; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 123; @position = 18; ]
+            const background;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 126; ]
+        module system_icon_destructive__discard {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 126; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 127; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_destructive__discard.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 128; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 129; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 132; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 132; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 133; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__hint_action_menu.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 134; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 135; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 138; ]
+        module prompt_size__title {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 138; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 139; @position = 18; ]
+            const width as Number = 192;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 140; @position = 18; ]
+            const height as Number = 81;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 143; ]
+        module confirmation_font__body {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 143; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 144 18 ]
+                %tmp.48 = getm $.Toybox.Graphics;
+                %tmp.49 = getv %tmp.48 :TEXT_JUSTIFY_CENTER;
+                %tmp.50 = getm $.Toybox.Graphics;
+                %tmp.51 = getv %tmp.50 :TEXT_JUSTIFY_VCENTER;
+                %tmp.52 = bitor %tmp.49 %tmp.51;
+                putv self :justification %tmp.52;
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 145 18 ]
+                %tmp.53 = getm $.Toybox.Graphics;
+                %tmp.54 = getv %tmp.53 :FONT_TINY;
+                putv self :font %tmp.54;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 144; @position = 18; ]
+            const justification;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 145; @position = 18; ]
+            const font;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 148; ]
+        module system_color_dark__background {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 148; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 149; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 150; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 153; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 153; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 154; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 157; ]
+        module system_size__launch_icon {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 157; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 158; @position = 18; ]
+            const scaleX as Number = 70;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 159; @position = 18; ]
+            const scaleY as Number = 70;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 160; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 163; ]
+        module confirmation_input__confirm {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 163; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 164; @position = 18; ]
+            const y1 as Number = 345;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 165; @position = 18; ]
+            const x1 as Number = 84;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 166; @position = 18; ]
+            const y2 as Number = 454;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 167; @position = 18; ]
+            const x2 as Number = 370;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 170; ]
+        module prompt_font__body_with_title {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 170; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 171 18 ]
+                %tmp.55 = getm $.Toybox.Graphics;
+                %tmp.56 = getv %tmp.55 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.56;
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 172 18 ]
+                %tmp.57 = getm $.Toybox.Graphics;
+                %tmp.58 = getv %tmp.57 :FONT_TINY;
+                putv self :font %tmp.58;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 171; @position = 18; ]
+            const justification;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 172; @position = 18; ]
+            const font;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 175; ]
+        module confirmation_loc__body {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 175; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 176; @position = 18; ]
+            const x as Number = 93;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 177; @position = 18; ]
+            const y as Number = 91;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 180; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 180; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 181; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 184; ]
+        module prompt_color_dark__background {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 184; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 185; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 186; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 189; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 189; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 190; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_destructive__hint_action_menu.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 191; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 192; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 195; ]
+        module system_loc__hint_action_menu {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 195; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 196; @position = 18; ]
+            const x as Number = 227;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 197; @position = 18; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 198; @position = 18; ]
+            const y as Number = 370;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 201; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 201; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 202; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 203; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 204; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 207; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 207; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 208; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 211; ]
+        module prompt_size__body_no_title {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 211; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 212; @position = 18; ]
+            const width as Number = 363;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 213; @position = 18; ]
+            const height as Number = 295;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 216; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 216; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 217; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 220; ]
+        module prompt_color_light__background {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 220; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 221; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 222; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 225; ]
+        module confirmation_input__delete {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 225; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 226 18 ]
+                %tmp.59 = getm $.Toybox.WatchUi;
+                %tmp.60 = getv %tmp.59 :KEY_ENTER;
+                putv self :button %tmp.60;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 226; @position = 18; ]
+            const button;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 229; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 229; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 230; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 233; ]
+        module system_input__action_menu {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 233; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 234; @position = 18; ]
+            const y1 as Number = 370;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 235; @position = 18; ]
+            const x1 as Number = 113;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 236; @position = 18; ]
+            const y2 as Number = 454;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 237; @position = 18; ]
+            const x2 as Number = 341;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 240; ]
+        module system_icon_light__save {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 240; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 241; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__save.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 242; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 243; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 244; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 245; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 248; ]
+        module prompt_color_light__body {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 248; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 250 18 ]
+                %tmp.61 = getm $.Toybox.Graphics;
+                %tmp.62 = getv %tmp.61 :COLOR_TRANSPARENT;
+                putv self :background %tmp.62;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 249; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 250; @position = 18; ]
+            const background;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 253; ]
+        module system_loc__subwindow {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 253; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 254; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 257; ]
+        module system_icon_light__warning {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 257; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 258; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__warning.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 259; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 260; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 261; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 262; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 265; ]
+        module confirmation_color_light__body {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 265; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 267 18 ]
+                %tmp.63 = getm $.Toybox.Graphics;
+                %tmp.64 = getv %tmp.63 :COLOR_TRANSPARENT;
+                putv self :background %tmp.64;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 266; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 267; @position = 18; ]
+            const background;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 270; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 270; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 271; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 272; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 273; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 276; ]
+        module activity_color_light__background {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 276; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 277; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 278; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 281; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 281; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 282; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_positive__hint_button_right_top.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 283; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 286; ]
+        module system_size__screen {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 286; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 287; @position = 18; ]
+            const width as Number = 454;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 288; @position = 18; ]
+            const height as Number = 454;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 291; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 291; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 292; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 293; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 296; ]
+        module system_color_light__background {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 296; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 297; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 298; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 301; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 301; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 302; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 303; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 306; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 306; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 307; @position = 18; ]
+            const x as Number = 227;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 308; @position = 18; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 309; @position = 18; ]
+            const y as Number = 345;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 312; ]
+        module activity_color_dark__text {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 312; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 314 18 ]
+                %tmp.65 = getm $.Toybox.Graphics;
+                %tmp.66 = getv %tmp.65 :COLOR_TRANSPARENT;
+                putv self :background %tmp.66;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 313; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 314; @position = 18; ]
+            const background;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 317; ]
+        module confirmation_input__keep {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 317; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 318 18 ]
+                %tmp.67 = getm $.Toybox.WatchUi;
+                %tmp.68 = getv %tmp.67 :KEY_ESC;
+                putv self :button %tmp.68;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 318; @position = 18; ]
+            const button;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 321; ]
+        module prompt_loc__body_with_title {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 321; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 322; @position = 18; ]
+            const x as Number = 45;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 323; @position = 18; ]
+            const y as Number = 114;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 326; ]
+        module system_icon_dark__search {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 326; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 327; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__search.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 328; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 329; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 330; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 331; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 334; ]
+        module activity_color_light__text {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 334; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 336 18 ]
+                %tmp.69 = getm $.Toybox.Graphics;
+                %tmp.70 = getv %tmp.69 :COLOR_TRANSPARENT;
+                putv self :background %tmp.70;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 335; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 336; @position = 18; ]
+            const background;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 339; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 339; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 340; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 341; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 342; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 345; ]
+        module system_icon_dark__save {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 345; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 346; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__save.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 347; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 348; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 349; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 350; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 353; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 353; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 354; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 357; ]
+        module system_icon_light__search {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 357; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 358; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__search.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 359; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 360; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 361; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 362; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 365; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 365; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 366; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 369; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 369; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 370; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 373; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 373; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 374; @position = 18; ]
+            const x as Number = 342;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 375; @position = 18; ]
+            const y as Number = 256;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 378; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 378; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 379; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 380; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 381; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 384; ]
+        module confirmation_color_dark__body {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 384; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 386 18 ]
+                %tmp.71 = getm $.Toybox.Graphics;
+                %tmp.72 = getv %tmp.71 :COLOR_TRANSPARENT;
+                putv self :background %tmp.72;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 385; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 386; @position = 18; ]
+            const background;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 389; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 389; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 390; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 391; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 392; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 395; ]
+        module prompt_color_dark__title {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 395; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 397 18 ]
+                %tmp.73 = getm $.Toybox.Graphics;
+                %tmp.74 = getv %tmp.73 :COLOR_TRANSPARENT;
+                putv self :background %tmp.74;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 396; @position = 18; ]
+            const color as Number = 0xB3B3B3;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 397; @position = 18; ]
+            const background;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 400; ]
+        module system_icon_destructive__cancel {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 400; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 401; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_destructive__cancel.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 402; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 403; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 406; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 406; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 407; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 408; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 411; ]
+        module prompt_loc__title {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 411; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 412; @position = 18; ]
+            const x as Number = 138;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 413; @position = 18; ]
+            const y as Number = 20;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 416; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 416; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 417 18 ]
+                %tmp.75 = getm $.Toybox.Graphics;
+                %tmp.76 = getv %tmp.75 :TEXT_JUSTIFY_CENTER;
+                %tmp.77 = getm $.Toybox.Graphics;
+                %tmp.78 = getv %tmp.77 :TEXT_JUSTIFY_VCENTER;
+                %tmp.79 = bitor %tmp.76 %tmp.78;
+                putv self :justification %tmp.79;
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 418 18 ]
+                %tmp.80 = getm $.Toybox.Graphics;
+                %tmp.81 = getv %tmp.80 :FONT_SMALL;
+                putv self :font %tmp.81;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 417; @position = 18; ]
+            const justification;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 418; @position = 18; ]
+            const font;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 421; ]
+        module prompt_color_light__title {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 421; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 423 18 ]
+                %tmp.82 = getm $.Toybox.Graphics;
+                %tmp.83 = getv %tmp.82 :COLOR_TRANSPARENT;
+                putv self :background %tmp.83;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 422; @position = 18; ]
+            const color as Number = 0xB3B3B3;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 423; @position = 18; ]
+            const background;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 426; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 426; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 427; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__hint_button_right_top.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 428; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 431; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 431; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 432; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 435; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 435; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 436; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 437; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 438; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 441; ]
+        module system_icon_light__cancel {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 441; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 442; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__cancel.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 443; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 444; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 445; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 446; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 449; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 449; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 450; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 451; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 452; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 455; ]
+        module system_icon_light__about {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 455; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 456; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__about.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 457; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 458; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 459; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 460; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 463; ]
+        module system_size__toast_icon {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 463; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 464; @position = 18; ]
+            const scaleX as Number = 38;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 465; @position = 18; ]
+            const scaleY as Number = 38;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 466; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 469; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 469; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 470; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 473; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 473; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 474; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 475; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 476; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 479; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 479; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 480; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__hint_action_menu.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 481; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 482; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 485; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 485; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 486; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 489; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 489; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 490; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 493; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 493; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 494; @position = 18; ]
+            const x as Number = 227;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 495; @position = 18; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 496; @position = 18; ]
+            const y as Number = 0;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 499; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 499; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 500; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 501; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 502; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 505; ]
+        module activity_color_dark__background {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 505; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 506; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 507; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 510; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 510; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 511; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 514; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 514; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 515; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 518; ]
+        module system_size__menu_icon {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 518; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 519; @position = 18; ]
+            const scaleX as Number = 55;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 520; @position = 18; ]
+            const scaleY as Number = 55;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 521; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 524; ]
+        module system_icon_destructive__warning {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 524; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 525; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_destructive__warning.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 526; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 527; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 530; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 530; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 531; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 534; ]
+        module system_icon_dark__cancel {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 534; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 535; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__cancel.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 536; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 537; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 538; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 539; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 542; ]
+        module prompt_size__body_with_title {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 542; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 543; @position = 18; ]
+            const width as Number = 363;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 544; @position = 18; ]
+            const height as Number = 250;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 547; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 547; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 548; @position = 18; ]
+            const x as Number = 360;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 549; @position = 18; ]
+            const y as Number = 54;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 552; ]
+        module system_color_light__text {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 552; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 554 18 ]
+                %tmp.84 = getm $.Toybox.Graphics;
+                %tmp.85 = getv %tmp.84 :COLOR_TRANSPARENT;
+                putv self :background %tmp.85;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 553; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 554; @position = 18; ]
+            const background;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 557; ]
+        module system_icon_light__check {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 557; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 558; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__check.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 559; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 560; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 561; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 562; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 565; ]
+        module confirmation_input__reject {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 565; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 566; @position = 18; ]
+            const y1 as Number = 0;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 567; @position = 18; ]
+            const x1 as Number = 113;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 568; @position = 18; ]
+            const y2 as Number = 88;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 569; @position = 18; ]
+            const x2 as Number = 341;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 572; ]
+        module system_icon_light__revert {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 572; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 573; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__revert.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 574; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 575; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 576; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 577; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 580; ]
+        module system_size__subwindow {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 580; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 581; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 584; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 584; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 585; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 588; ]
+        module system_icon_dark__check {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 588; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 589; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__check.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 590; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 591; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 592; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 593; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 596; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 596; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 597; @position = 18; ]
+            const x as Number = 342;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 598; @position = 18; ]
+            const y as Number = 256;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 601; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 601; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 602; @position = 18; ]
+            const x as Number = 358;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 603; @position = 18; ]
+            const y as Number = 54;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 606; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 606; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 607; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_positive__hint_action_menu.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 608; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 609; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 612; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 612; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 613; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 616; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 616; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 617; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 620; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 620; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 621; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 622; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 625; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 625; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 626; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 627; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 630; ]
+        module system_icon_dark__revert {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 630; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 631; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__revert.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 632; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 633; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 634; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 635; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 638; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 638; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 639; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 640; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 641; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 644; ]
+        module system_icon_dark__question {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 644; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 645; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__question.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 646; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 647; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 648; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 649; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 652; ]
+        module system_icon_light__discard {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 652; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 653; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__discard.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 654; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 655; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 656; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 657; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 660; ]
+        module device_info {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 660; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 662 18 ]
+                %tmp.86 = getm $.Toybox.System;
+                %tmp.87 = getv %tmp.86 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.87;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 661; @position = 18; ]
+            const screenWidth as Number = 454;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 662; @position = 18; ]
+            const screenShape;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 663; @position = 18; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 664; @position = 18; ]
+            const screenHeight as Number = 454;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 665; @position = 18; ]
+            const hasTouchScreen as Boolean = true;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 666; @position = 18; ]
+            const hasEnhancedReadabilityMode as Boolean = true;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 669; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 669; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 670; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 671; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 672; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 675; ]
+        module prompt_font__body_no_title {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 675; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 676 18 ]
+                %tmp.88 = getm $.Toybox.Graphics;
+                %tmp.89 = getv %tmp.88 :TEXT_JUSTIFY_CENTER;
+                %tmp.90 = getm $.Toybox.Graphics;
+                %tmp.91 = getv %tmp.90 :TEXT_JUSTIFY_VCENTER;
+                %tmp.92 = bitor %tmp.89 %tmp.91;
+                putv self :justification %tmp.92;
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 677 18 ]
+                %tmp.93 = getm $.Toybox.Graphics;
+                %tmp.94 = getv %tmp.93 :FONT_TINY;
+                putv self :font %tmp.94;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 676; @position = 18; ]
+            const justification;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 677; @position = 18; ]
+            const font;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 680; ]
+        module prompt_size__title_icon {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 680; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 681; @position = 18; ]
+            const scaleX as Float = 0.14;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 682; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 685; ]
+        module system_icon_dark__warning {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 685; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 686; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_dark__warning.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 687; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 688; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 689; @position = 18; ]
+            const automaticPalette as String = "true";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 690; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 693; ]
+        module prompt_loc__title_icon {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 693; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 694; @position = 18; ]
+            const x as Number = 227;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 695; @position = 18; ]
+            const y as Number = 45;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 696; @position = 18; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 697; @position = 18; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 700; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 700; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 701 18 ]
+                %tmp.95 = getm $.Toybox.Graphics;
+                %tmp.96 = getv %tmp.95 :TEXT_JUSTIFY_CENTER;
+                %tmp.97 = getm $.Toybox.Graphics;
+                %tmp.98 = getv %tmp.97 :TEXT_JUSTIFY_VCENTER;
+                %tmp.99 = bitor %tmp.96 %tmp.98;
+                putv self :justification %tmp.99;
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 702 18 ]
+                %tmp.100 = getm $.Toybox.Graphics;
+                %tmp.101 = getv %tmp.100 :FONT_XTINY;
+                putv self :font %tmp.101;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 701; @position = 18; ]
+            const justification;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 702; @position = 18; ]
+            const font;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 705; ]
+        module prompt_color_dark__body {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 705; ]
+            <init> {
+[ "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen" 707 18 ]
+                %tmp.102 = getm $.Toybox.Graphics;
+                %tmp.103 = getv %tmp.102 :COLOR_TRANSPARENT;
+                putv self :background %tmp.103;
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 706; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 707; @position = 18; ]
+            const background;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 710; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 710; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 711; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 712; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 713; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 716; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 716; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 717; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_light__hint_button_right_top.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 718; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 721; ]
+        module confirmation_size__body {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 721; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 722; @position = 18; ]
+            const width as Number = 269;
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 723; @position = 18; ]
+            const height as Number = 272;
+        }
+        [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 726; ]
+        module system_icon_positive__check {
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 726; ]
+            <init> {
+            }
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 727; @position = 18; ]
+            const filename as String = "C:\\Users\\Family\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\venu3\\system_icon_positive__check.svg";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 728; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 729; @position = 18; ]
+            const packingFormat as String = "png";
+        }
+    }
+}
+[ @file = "c:\Garmin\Projects\FlappyWatch\gen\006-B4260-00\source\Rez.mcgen"; @line = 1; ]
+<init> {
+}
